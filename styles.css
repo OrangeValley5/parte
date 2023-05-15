@@ -588,6 +588,11 @@ width: 100%;
 background-color: #191e23;
 }
 
+.subber{
+    display: flex;
+    justify-content: space-between;
+}
+
 .first-row{
     display: flex;
     justify-content: space-between;
