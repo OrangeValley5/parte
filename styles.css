@@ -51,6 +51,10 @@ nav a{
     padding: 10px 20px;
     background-color: rgb(0, 228, 87);
 }
+.active:hover{
+    padding: 10px 20px;
+    background-color: rgb(0, 170, 65);
+}
 
 .nav li:hover{
     background-color: #777;
@@ -66,6 +70,11 @@ nav a{
 
 .section1 h1{
     font-size: 3.5rem;
+    transition: 0.3s ease-out;
+}
+
+.section1 h1:hover{
+    font-size: 3.8rem;
 }
 
 .section1 p{
@@ -114,12 +123,17 @@ nav a{
     color: white;
     background-color: rgb(0, 228, 87);
     cursor: pointer;
+    transition: 0.3s ease-out;
 }
 
 .sub-section{
     margin-top: 10rem;
     display: flex;
     justify-content: space-between;
+}
+
+.col2 button:hover{
+color: #000;
 }
 
 .sub-section-col{
@@ -234,7 +248,7 @@ margin-bottom: 20px;
 }
 
 .section4 h1{
-    font-size: 40px;
+    font-size: 60px;
 }
 
 footer{
@@ -449,6 +463,10 @@ width: 100%;
 
 .section4{
     padding: 40px 4rem;
+}
+
+.section4 h1{
+    font-size: 40px;
 }
 
 /*-------------- SUBSCRIBE-----------*/
@@ -682,4 +700,10 @@ background-color: #191e23;
             flex-wrap: wrap;
             justify-content: center;
         }
+
+        .inputs{
+            justify-content: flex-start;
+        }
+
+        
 }
