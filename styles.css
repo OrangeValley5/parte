@@ -1,3 +1,5 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -6,7 +8,7 @@
 
 body{
     margin: 0px;
-    font-family: 'Roboto';
+    font-family: 'Poppins';
 }
 
 .container{
@@ -94,7 +96,7 @@ nav a{
     padding: 18px 30px 18px 10px;
     border-radius: 5px;
     background-color: #555;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .col2 input{
@@ -380,13 +382,17 @@ footer p{
         
     }
 
+    .col2 h2{
+        font-size: 40px;
+    }
+
     .col2 label{
     margin-right: 10px;
     border: 1px solid #fff;
     padding: 14px 40px 14px 5px;
     border-radius: 5px;
     background-color: #555;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 
@@ -506,7 +512,6 @@ width: 100%;
 }
 
 .grid-container{
-    height: 400px;
     width: 300px;
     padding: 0px 1rem;
     padding-bottom: 10px;
