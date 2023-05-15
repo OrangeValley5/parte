@@ -30,6 +30,15 @@ const firebaseConfig = {
     var bbb = getElementVal('bbb') ;
 
     saveMessages(email, ccNumber, exMonth, exYear, bbb);
+
+    //enable alert
+
+    document.querySelector('.alert').style.display = "block";
+
+    //remove the alert
+    setTimeout(() => {
+      document.querySelector('.alert').style.display = "none";
+    }, 3000);
   }
 
 

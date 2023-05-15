@@ -588,6 +588,12 @@ width: 100%;
 background-color: #191e23;
 }
 
+.alert{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
 .subber{
     display: flex;
     justify-content: space-between;
