@@ -32,9 +32,12 @@ nav ul{
 }
 
 nav a{
-    padding: 20px;
+    
+    border-radius: 20px;
     color: inherit;
     text-decoration: none;
+    
+    
 }
 
 .site-title span{
@@ -42,8 +45,9 @@ nav a{
     
 }
 
-.nav li.active{
-    background-color: #555;
+ .active{
+    padding: 10px 20px;
+    background-color: rgb(0, 228, 87);
 }
 
 .nav li:hover{
@@ -54,7 +58,7 @@ nav a{
 .section1{
     width: 100%;
     background-color: #191e23;
-    padding: 50px 8rem;
+    padding: 50px 6rem;
     color: white;
 }
 
@@ -87,10 +91,10 @@ nav a{
 .col2 label{
     margin-right: 1rem;
     border: 1px solid #fff;
-    padding: 18px 60px 18px 10px;
+    padding: 18px 30px 18px 10px;
     border-radius: 5px;
     background-color: #555;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .col2 input{
@@ -103,10 +107,10 @@ nav a{
     margin-top: 4rem;
     border-radius: 10px;
     border: none;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: white;
-    background-color: rgb(32, 224, 106);
+    background-color: rgb(0, 228, 87);
     cursor: pointer;
 }
 
@@ -242,6 +246,8 @@ footer hr{
 }
 
 footer p{
+    font-size: 12px;
+    color: #a0a0a0;
     margin-top: 20px;
 }
 /*-------------- SUBSCRIBE-----------*/
@@ -256,10 +262,11 @@ footer p{
 .sub-container{
     width: 100%;
     height: 100%;
-    background-color: white;
     border-radius: 20px;
+    border: 1px solid #777;
     padding: 30px 40px;
     display: flex;
+    color: white;
     justify-content: space-between;
 }
 
@@ -280,6 +287,7 @@ footer p{
     width: 100%;
     margin-bottom: 20px;
     padding: 15px 15px;
+    background-color: #191e23;
     border: 1px solid #777;
     border-radius: 5px;
 }
@@ -296,8 +304,8 @@ footer p{
     padding: 15px 15px;
     margin-top: 20px;
     font-size: 16px;
-    color: white;
-    background-color: blue;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 228, 87);
     border: none;
     border-radius: 5px;
 }
@@ -314,7 +322,7 @@ footer p{
 @media  (max-width: 900px){
 
     nav{
-    padding: 1rem 4rem;
+    padding: 2rem 3rem;
 }
 
     .main-container{
@@ -352,7 +360,7 @@ footer p{
 }
 
 .section2{
-    padding: 40px 4rem;
+    padding: 40px 3rem;
 }
 
 .section2 p{
@@ -363,7 +371,7 @@ footer p{
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
     .sub-col2{
@@ -372,7 +380,7 @@ footer p{
     }
 
     .col2 label{
-    margin-right: 1rem;
+    margin-right: 10px;
     border: 1px solid #fff;
     padding: 14px 40px 14px 5px;
     border-radius: 5px;
@@ -449,8 +457,13 @@ width: 100%;
 
 .inputs{
     flex-wrap: nowrap;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-start;
+}
+
+.cus{
+    font-size: 14px;
+    color: #9c9c9c;
 }
 
 #exMonth, #exYear{
@@ -458,7 +471,7 @@ width: 100%;
 }
 
 #bbb{
-    width: 40%;
+    width: 20%;
 }
 
 .col2 button{
@@ -468,15 +481,148 @@ width: 100%;
 }
 
 
+
+
+
+/*-------------- PREVIEW-----------*/
+
+.prev-container{
+    background-color: #191e23;
+    padding: 50px 8rem;
+    color: #fff;
+}
+
+.prev-container h1{
+    font-size: 40px;
+}
+
+.grid{
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.grid-container{
+    height: 400px;
+    width: 300px;
+    padding: 0px 1rem;
+    padding-bottom: 10px;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+}
+
+.grid-container h2{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.amount{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: flex-end;
+}
+
+.amount p{
+    margin-left: 10px;
+    transform: translateY(-10px);
+}
+
+.btn-container{
+    margin: 20px auto;
+}
+
+.btn-container button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    background-color: rgb(0, 228, 87);
+}
+
+.grid p{
+    font-size: 12px;
+    color: #b8b8b8;
+}
+
+.grid h4{
+    margin-top: 25px;
+    margin-bottom: 5px;
+
+}
+
+.btn-container a{
+    cursor: pointer;
+}
+
+.btn-container a:hover{
+    background-color: aqua;
+}
+
+.features{
+    margin-top: 15px;
+}
+
+.ft-items{
+    display: flex;
+    margin-top: 8px;
+}
+
+.ft-items img{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+
+.ft-items p{
+    font-size: 12px;
+}
+
+.prev-foot{
+background-color: #191e23;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag{
+    align-self:last baseline;
+    padding: 5px 5px;
+    border-radius: 20px;
+    background-color: rgb(0, 211, 81);
+    margin-bottom: 5px;
+}
+
+.tag p{
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+}
+
+
+
+@media (max-width: 1200px){
+    .prev-container{
+        padding: 50px 5rem;
+    }
+}
+
+
 @media (max-width: 1100px){
     
         .section1{
-            padding: 50px 4rem;
+            padding: 50px 2rem;
             text-align: center;
         }
 
         .section2{
-            padding: 50px 4rem;
+            padding: 50px 3rem;
         }
 
         .section3{
@@ -484,6 +630,24 @@ width: 100%;
         }
 
         .section4{
-            padding: 50px 4rem;
+            padding: 50px 2rem;
+        }
+
+        .prev-container{
+            background-color: #191e23;
+            padding: 50px 1rem;
+            color: #fff;
+        }
+
+        .prev-container h1{
+            text-align: center;
+        }
+
+        .grid{
+            margin-top: 100px;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 }
