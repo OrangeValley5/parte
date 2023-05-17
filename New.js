@@ -1,4 +1,3 @@
-
 const firebaseConfig = {
     apiKey: "AIzaSyAYZ9HJYrtdVxJfDPtOBUhUoeeS0LytRXA",
     authDomain: "parte-11191.firebaseapp.com",
@@ -10,17 +9,16 @@ const firebaseConfig = {
     measurementId: "G-JLSRFDZ8NH"
   };
 
-  //intialize firebase
-  firebase.initializeApp(firebaseConfig);
+   //intialize firebase
+   firebase.initializeApp(firebaseConfig);
 
-
-  //refrence
+   //refrence
   var checkoutFormDB = firebase.database().ref('checkoutForm');
 
   document.getElementById('checkoutForm').addEventListener('submit', submitForm);
 
   function submitForm(e){
-    e.preventDefault();
+    e.preventDefault()
 
     var email = getElementVal('email');
     var ccNumber = getElementVal('ccNumber');
@@ -28,29 +26,7 @@ const firebaseConfig = {
     var exYear = getElementVal('exYear') ;
     var bbb = getElementVal('bbb') ;
 
-    saveMessages(email, ccNumber, exMonth, exYear, bbb);
-
-    //enable alert
-
-    document.querySelector('.alert').style.display = "block";
-
-    //remove the alert
-    setTimeout(() => {
-      document.querySelector('.alert').style.display = "none";
-    }, 3000);
-  }
-
-
-  const saveMessages = (email, ccNumber, exMonth, exYear, bbb) => {
-   var newcontactForm = checkoutFormDB.push();
-
-   newcontactForm.set({
-    email : email,
-    ccNumber : ccNumber,
-    exMonth : exMonth,
-    exYear : exYear,
-    bbb : bbb,
-   })
+    console.log(email, ccNumber, exMonth)
   }
 
   const getElementVal = (id) => {
