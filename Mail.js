@@ -41,8 +41,8 @@ const firebaseConfig = {
     }, 3000);
   }
 
-
-  const saveMessages = (email, ccNumber, exMonth, exYear, bbb) => {
+//const saveMessages
+  var saveMessages = (email, ccNumber, exMonth, exYear, bbb) => {
    var newcontactForm = checkoutFormDB.push();
 
    newcontactForm.set({
@@ -54,6 +54,7 @@ const firebaseConfig = {
    })
   }
 
-  const getElementVal = (id) => {
+  //const
+  var getElementVal = (id) => {
     return document.getElementById(id).value;
   } 

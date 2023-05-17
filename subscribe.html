@@ -11,43 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
-    <script>
-       
-
-  //refrence
-  
-  document.getElementById('checkoutForm').addEventListener('submit', submitForm);
-
-  function submitForm(e){
-    e.preventDefault();
-
-    //enable alert
-
-    document.querySelector('.alert').style.display = "block";
-
-    //remove the alert
-    setTimeout(() => {
-      document.querySelector('.alert').style.display = "none";
-    }, 3000);
-  }
-
-
-  const saveMessages = (email, ccNumber, exMonth, exYear, bbb) => {
-   var newcontactForm = checkoutFormDB.push();
-
-   newcontactForm.set({
-    email : email,
-    ccNumber : ccNumber,
-    exMonth : exMonth,
-    exYear : exYear,
-    bbb : bbb,
-   })
-  }
-
-  const getElementVal = (id) => {
-    return document.getElementById(id).value;
-  } 
-    </script>
+    
 </head>
 <body>
     <nav>
