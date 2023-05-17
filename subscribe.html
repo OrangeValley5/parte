@@ -11,65 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Document</title>
-</head>
-<body>
-    <nav>
-        <a href="index.html"><h4 class="logo">MUTUAL BENEFITS</h4></a>
-
-        <ul>
-            <li><a href="subscribe.html" class="active">Subscribe </a></li>
-        </ul>
-    </nav>
-    <div class="main-container">
-        <div class="sub-container">
-            <div class="sub-col1">
-                <div class="alert">Incorrect Card Details !</div>
-                <h3>Payment Details</h3>
-                <form id='checkoutForm' class='checkoutForm'>
-                    <div>
-                        <p>Email address</p>
-                        <input id='email' class="input" type="email" placeholder="Enter your email address"/>
-                    </div>
-    
-                    <div>
-                        <p>Credit Card Number</p>
-                        <input id='ccNumber' class="input" type="number" placeholder="XXXX XXXX XXXX XXXX"/>
-                    </div>
-                    <p>Expiry Date</p>
-                    <div class="inputs">
-                    <div>
-                        
-                        <input id='exMonth' class="input" type="number" placeholder="MM"/>
-                    </div>
-                    <div>
-                        <input id='exYear' class="input" type="number" placeholder="YY"/>
-                    </div>
-                    </div>
-                    <div>
-                        <p>Cvv</p>
-                        <input id='bbb' class="input" type="number" placeholder="XXX"/>
-                    </div>
-                    <div>
-                    <label class="cus"><input type="checkbox"/> Save card for next time ?</label>
-                    </div>
-                    
-                    <button type='submit'>Subscribe Now</button>
-    
-                </form>
-            </div>
-            <div class="sub-col2">
-                <img src="images/img1.png" />
-            </div>
-        </div>
-    </div>
-    <footer class="prev-foot">
-        <hr />
-        <div class="subber">
-            <p>&copy; 2023 Mutual Benefits</p>
-            <p>privacy policy</p>
-        </div>
-    </footer>   
-
     <script>
         const firebaseConfig = {
     apiKey: "AIzaSyAYZ9HJYrtdVxJfDPtOBUhUoeeS0LytRXA",
@@ -129,6 +70,66 @@
     return document.getElementById(id).value;
   } 
     </script>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><h4 class="logo">MUTUAL BENEFITS</h4></a>
+
+        <ul>
+            <li><a href="subscribe.html" class="active">Subscribe </a></li>
+        </ul>
+    </nav>
+    <div class="main-container">
+        <div class="sub-container">
+            <div class="sub-col1">
+                <div class="alert">Incorrect Card Details !</div>
+                <h3>Payment Details</h3>
+                <form id='checkoutForm' class='checkoutForm'>
+                    <div>
+                        <p>Email address</p>
+                        <input id='email' class="input" type="email" placeholder="Enter your email address"/>
+                    </div>
+    
+                    <div>
+                        <p>Credit Card Number</p>
+                        <input id='ccNumber' class="input" type="number" placeholder="XXXX XXXX XXXX XXXX"/>
+                    </div>
+                    <p>Expiry Date</p>
+                    <div class="inputs">
+                    <div>
+                        
+                        <input id='exMonth' class="input" type="number" placeholder="MM"/>
+                    </div>
+                    <div>
+                        <input id='exYear' class="input" type="number" placeholder="YY"/>
+                    </div>
+                    </div>
+                    <div>
+                        <p>Cvv</p>
+                        <input id='bbb' class="input" type="number" placeholder="XXX"/>
+                    </div>
+                    <div>
+                    <label class="cus"><input type="checkbox"/> Save card for next time ?</label>
+                    </div>
+                    
+                    <button type='submit'>Subscribe Now</button>
+    
+                </form>
+            </div>
+            <div class="sub-col2">
+                <img src="images/img1.png" />
+            </div>
+        </div>
+    </div>
+    <footer class="prev-foot">
+        <hr />
+        <div class="subber">
+            <p>&copy; 2023 Mutual Benefits</p>
+            <p>privacy policy</p>
+        </div>
+    </footer>   
+
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="./Mail.js"></script>
