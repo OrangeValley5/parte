@@ -35,24 +35,26 @@ const firebaseConfig = {
     document.querySelector('.alert').style.display = "block";
 
     //remove the alert
-    setTimeout(() => {
+    setTimeout(function() {
       document.querySelector('.alert').style.display = "none";
     }, 3000);
   }
 
+  
 
-  const saveMessages = (email, ccNumber, exMonth, exYear, bbb) => {
-   var newcontactForm = checkoutFormDB.push();
 
-   newcontactForm.set({
-    email : email,
-    ccNumber : ccNumber,
-    exMonth : exMonth,
-    exYear : exYear,
-    bbb : bbb,
-   })
-  }
+  var saveMessages = function(email, ccNumber, exMonth, exYear, bbb) {
+    var newcontactForm = checkoutFormDB.push();
+  
+    newcontactForm.set({
+      email: email,
+      ccNumber: ccNumber,
+      exMonth: exMonth,
+      exYear: exYear,
+      bbb: bbb,
+    });
+  };
 
-  const getElementVal = (id) => {
+  var getElementVal = function(id) {
     return document.getElementById(id).value;
-  } 
+  };
