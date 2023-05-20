@@ -247,10 +247,16 @@ margin-bottom: 20px;
 }
 
 .profile-header{
-    background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.try{
+    background-color: rebeccapurple;
+    height: 220px;
+    width: 100%;
+    border: 20px solid burlywood;
 }
 
 .section3a{
