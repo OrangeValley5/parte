@@ -259,6 +259,10 @@ margin-bottom: 20px;
     border: 20px solid burlywood;
 }
 
+.try i{
+    color: #fff;
+}
+
 .section3a{
     padding: 80px 8rem;
 }
