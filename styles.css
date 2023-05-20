@@ -246,6 +246,156 @@ margin-top: 20px;
 margin-bottom: 20px;
 }
 
+.section3a{
+    padding: 80px 8rem;
+}
+
+.profile-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section3a h3{
+    font-size: 30px;
+}
+
+
+.section3a .active{
+    padding: 8px 18px;
+    background-color: rgb(0, 228, 87);
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.profile-row{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+    margin: 40px auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.profile-card{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/user1.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card2{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/user5.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card3{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/user3.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card4{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/user4.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card5{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/b1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card6{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/b5.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card7{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/b6.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card8{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/b4.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.online{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+}
+
+.profile-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 0.8rem;
+    background-color: rgba(245, 245, 245, 0.8) ;
+}
+
+.profile-info h4{
+    font-size: 22px;
+}
+
+.profile-info i{
+    font-size: 24px;
+}
+
+.profile-info span{
+    font-weight: normal;
+}
+
+
+
 .section4{
     background-color: #000;
     color: white;
@@ -347,6 +497,18 @@ footer p{
 }
 
 @media  (max-width: 900px){
+
+    .section3a{
+        padding: 40px 2rem;
+    }
+
+    .profile-header h3{
+        font-size: 18px;
+    }
+
+    .profile-header .active{
+        padding: 5px 10px;
+    }
 
     nav{
     padding: 2rem 3rem;
@@ -470,6 +632,8 @@ footer p{
 .section3 hr{
 width: 100%;
 }
+
+
 
 .section4{
     padding: 40px 4rem;
@@ -725,6 +889,19 @@ background-color: #191e23;
         .inputs{
             justify-content: flex-start;
         }
+        
+        .section3a{
 
+        }
+
+        .profile-row{
+            display: flex;
+            flex-wrap: wrap;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 40px;
+            margin: 40px auto;
+            gap: 20px;
+            justify-content: center;
+        }
         
 }
