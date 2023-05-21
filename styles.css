@@ -514,7 +514,7 @@ footer p{
     
 
     .section3a{
-        padding: 40px 2rem;
+        padding: 40px 1.5rem;
     }
 
     .profile-header h3{
@@ -971,8 +971,8 @@ background-color: #191e23;
     }
 
     .sizing {
-        width: 140px;
-        height: 140px;
+        width: 150px;
+        height: 150px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
