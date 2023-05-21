@@ -252,16 +252,7 @@ margin-bottom: 20px;
     align-items: center;
 }
 
-.try{
-    background-color: rebeccapurple;
-    height: 220px;
-    width: 100%;
-    border: 20px solid burlywood;
-}
 
-.try i{
-    color: #fff;
-}
 
 .section3a{
     padding: 80px 8rem;
@@ -286,7 +277,102 @@ margin-bottom: 20px;
     color: white;
 }
 
+.profile-row{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+    margin: 40px auto;
+    gap: 20px;
+    justify-content: center;
+}
 
+.profile-card{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/user1.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card2{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/user5.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card3{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/user3.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card4{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/user4.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card5{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/b1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card6{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/b5.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card7{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/b6.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card8{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/b4.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .online{
     width: 100%;
@@ -827,4 +913,16 @@ background-color: #191e23;
             justify-content: center;
         }
         
+}
+
+
+.try{
+    background-color: rebeccapurple;
+    height: 220px;
+    width: 100%;
+    border: 20px solid burlywood;
+}
+
+.try i{
+    color: #fff;
 }
