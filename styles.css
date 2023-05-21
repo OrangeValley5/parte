@@ -255,7 +255,8 @@ margin-bottom: 20px;
 
 
 .section3a{
-    padding: 80px 8rem;
+    padding: 80px 4rem;
+    width: 100%;
 }
 
 .profile-header{
@@ -279,12 +280,15 @@ margin-bottom: 20px;
 
 .profile-row{
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
     margin-top: 40px;
     margin: 40px auto;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
+    
 }
+
+
 
 .profile-card{
     width: 270px;
@@ -295,6 +299,7 @@ margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .profile-card2{
@@ -374,6 +379,11 @@ margin-bottom: 20px;
     justify-content: space-between;
 }
 
+.sizing{
+    width: 250px;
+    height: 250px;
+}
+
 .online{
     width: 100%;
     height: 50px;
@@ -390,6 +400,11 @@ margin-bottom: 20px;
     background-color: rgba(245, 245, 245, 0.8) ;
 }
 
+.profile-info {
+    text-decoration: none;
+    color: #000;
+}
+
 .profile-info h4{
     font-size: 22px;
 }
@@ -400,6 +415,15 @@ margin-bottom: 20px;
 
 .profile-info span{
     font-weight: normal;
+}
+
+.sizing:hover{
+    transition:  0.3s ease-out;
+    transform: translateY(10px);
+}
+
+.section3a a{
+    text-decoration: none ;
 }
 
 
@@ -853,6 +877,11 @@ background-color: #191e23;
         font-size: large;
     }
 
+    .profile-row{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .sizing{
         height: 250px;
     }
@@ -960,6 +989,10 @@ background-color: #191e23;
 }
 
 @media (max-width: 900px){
+
+    .profile-header .active{
+        font-size: 10px;
+    }
 
     .profile-row{
         display: flex;
