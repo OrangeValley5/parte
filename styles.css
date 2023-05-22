@@ -284,14 +284,13 @@ margin-bottom: 20px;
     margin-top: 40px;
     margin: 40px auto;
     gap: 30px;
-    justify-content: center;
     
 }
 
 
 
 .profile-card{
-    width: 270px;
+    width: 250px;
     height: 300px;
     border-radius: 10px;
     background: url(images/user1.png);
@@ -379,9 +378,53 @@ margin-bottom: 20px;
     justify-content: space-between;
 }
 
+.profile-card4a{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/user6.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card4b{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/user7.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card8a{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/b8.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile-card8b{
+    width: 270px;
+    height: 300px;
+    border-radius: 10px;
+    background: url(images/b9.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .sizing{
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
 }
 
 .online{
@@ -395,8 +438,8 @@ margin-bottom: 20px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 100px;
-    padding: 0.8rem;
+    height: 80px;
+    padding: 0.6rem;
     background-color: rgba(245, 245, 245, 0.8) ;
 }
 
@@ -406,7 +449,7 @@ margin-bottom: 20px;
 }
 
 .profile-info h4{
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .profile-info i{
@@ -949,7 +992,7 @@ background-color: #191e23;
 
         .profile-row{
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             margin-top: 40px;
             margin: 40px auto;
             gap: 20px;
