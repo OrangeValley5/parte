@@ -1181,9 +1181,15 @@ background-color: #191e23;
 
 .section5 h2{
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
+    margin-bottom: 10px;
     color: white;
     font-size: 30px;
+}
+
+.section5 h3{
+    text-align: center;
+    color: white;
 }
 
 .main-wrapper{
@@ -1284,6 +1290,10 @@ background-color: #191e23;
 
 .ratings i{
     font-size: 10px;
+}
+
+.section5 h2{
+    font-size: 20px;
 }
 
 .child p{
