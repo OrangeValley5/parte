@@ -488,6 +488,7 @@ margin-bottom: 20px;
 
 .profile-info p{
     font-size: 15px;
+    color: #3b3b3b;
 }
 
 .profile-info h4{
@@ -496,6 +497,7 @@ margin-bottom: 20px;
 
 .profile-info i{
     font-size: 24px;
+    color: #34383d;
 }
 
 .profile-info span{
@@ -509,6 +511,25 @@ margin-bottom: 20px;
 
 .section3a a{
     text-decoration: none ;
+}
+
+.review-container{
+    display: flex;
+    gap: 20px;
+}
+
+.ratings{
+    margin-bottom: 10px;
+}
+
+.ratings i{
+    color: rgb(0, 228, 87);;
+}
+
+.review-card{
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #555;
 }
 
 
@@ -996,6 +1017,11 @@ background-color: #191e23;
 @media (max-width: 1100px){
 
 
+    .onbox{
+        margin-top: 0.5rem;
+        margin-right: 0.4rem;
+    }
+
     .sub-container{
         display: flex;
         flex-direction: column;
@@ -1137,5 +1163,137 @@ background-color: #191e23;
     .profile-info i{
         font-size: 14px;
     }
+}
+
+.child{
+    width: 250px;
+    margin: 10px;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+.section5{
+    background-color: #181818;
+    padding-bottom: 4rem;
+}
+
+.section5 h2{
+    text-align: center;
+    padding-top: 100px;
+    color: white;
+    font-size: 30px;
+}
+
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper .i{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 41px;
+    position: absolute;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper .i:first-child{
+    left: -23px;
+    display: none;
+}
+
+.wrapper .i:last-child{
+    right: -15px;
+}
+
+.wrapper .carousel{
+    white-space: nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel .dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .child{
+    pointer-events: none;
+}
+
+.carousel .child{
+    height: 210px;
+    width: calc(100% / 3);
+    
+}
+
+.child p{
+    white-space: pre-line;
+    color: white;
+    font-size: 16px;
+}
+
+.child img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.prof{
+    display: flex ;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.prof p{
+    font-size: 10px;
+    color: #cccccc;
+}
+
+@media  (max-width: 900px) {
+
+   .carousel .child{
+    width: calc(100% / 2);
+} 
+}
+
+@media screen and (max-width: 550px) {
+
+   .carousel .child{
+    width: 90%;
+    height: 180px;
+} 
+
+.ratings i{
+    font-size: 10px;
+}
+
+.child p{
+    font-size: 11px;
+}
+
+.prof img{
+    width: 30px;
+    height: 30px;
+}
+
 }
 
