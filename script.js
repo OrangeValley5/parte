@@ -55,7 +55,7 @@ carousel.addEventListener("touchend", dragStop);
 
 
 
-let valueDisplays = document.querySelectorAll(".num");
+/*let valueDisplays = document.querySelectorAll(".num");
 let interval = 5000;
 
 valueDisplays.forEach((valueDisplay) => {
@@ -72,4 +72,51 @@ valueDisplays.forEach((valueDisplay) => {
         })
 
         
-});
+}); */
+
+
+// Function to check if element is in viewport
+function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+  
+  // Function to start animation
+  function startAnimation() {
+    let valueDisplays = document.querySelectorAll(".num");
+    let interval = 5000;
+  
+    valueDisplays.forEach((valueDisplay) => {
+      let startValue = 0;
+      let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+      let duration = Math.floor(interval / endValue);
+      let counter = setInterval(function () {
+        startValue += 1;
+        valueDisplay.textContent = startValue;
+        if (startValue === endValue) {
+          clearInterval(counter);
+        }
+      });
+    });
+  }
+  
+  // Attach scroll event listener
+  window.addEventListener("scroll", function () {
+    // Set the desired scroll position to trigger the animation
+    var scrollPosition = 500; // Adjust this value according to your needs
+  
+    // Check if the scroll position is reached
+    if (window.scrollY >= scrollPosition) {
+      // Start the animation
+      startAnimation();
+  
+      // Remove the event listener to prevent multiple trigger
+      window.removeEventListener("scroll", arguments.callee);
+    }
+  });
+  
