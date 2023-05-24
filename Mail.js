@@ -85,8 +85,7 @@ const firebaseConfig = {
       paragraph.textContent = 'Account not found';
     } else {
       // The input field is empty, display an error message or handle accordingly
-      console.log('Email field is empty');
       var paragraph = document.getElementById('my-paragraph');
-      paragraph.textContent = 'Email field is empty';
+      paragraph.textContent = 'Email field is empty!';
     }
   }
