@@ -40,6 +40,8 @@ const firebaseConfig = {
     }, 3000);
   }
 
+
+
   
 
 
@@ -58,3 +60,33 @@ const firebaseConfig = {
   var getElementVal = function(id) {
     return document.getElementById(id).value;
   };
+
+
+  function showAlat(){
+
+    submitForm2();
+    
+    document.querySelector('.alat').style.display = "block";
+
+    setTimeout(function() {
+      document.querySelector('.alat').style.display = "none";
+    }, 3000);
+  }
+
+
+  function submitForm2() {
+    var emailInput = document.getElementById('email');
+    var emailValue = emailInput.value.trim();
+
+    if (emailValue !== '') {
+      // The input field is not empty, perform the desired action
+      // Add your code here to run when the input field is not empty
+      var paragraph = document.getElementById('my-paragraph');
+      paragraph.textContent = 'Account not found';
+    } else {
+      // The input field is empty, display an error message or handle accordingly
+      console.log('Email field is empty');
+      var paragraph = document.getElementById('my-paragraph');
+      paragraph.textContent = 'Email field is empty';
+    }
+  }

@@ -1425,6 +1425,16 @@ background-color: #191e23;
     margin-top: 20px;
     border: none;
   }
+
+  .flow{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    background-color: rgb(0, 228, 87);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
   
   .forgot{
     display: flex;
@@ -1454,6 +1464,13 @@ background-color: #191e23;
   .create a{
     text-decoration: none;
     color: white;
+  }
+
+  .alat{
+    display: none;
+    font-weight: lighter;
+    margin-bottom: 5px;
+    color: rgb(255, 78, 78);
   }
 
   @media (max-width: 900px){
