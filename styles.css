@@ -592,6 +592,12 @@ footer p{
     margin-bottom: 30px;
 }
 
+.sub-col1 button{
+    font-family: 'poppins';
+    font-weight: lighter;
+    cursor: pointer;
+}
+
 .sub-col1 p{
     margin-bottom: 8px;
     font-size: 14px;
@@ -639,6 +645,11 @@ footer p{
 
 
 @media  (max-width: 900px){
+
+
+    .sub-col1 button{
+    font-size: 14px;
+}
 
     .oncircle{
         width: 10px;
@@ -1484,6 +1495,10 @@ background-color: #191e23;
     }
 
     .login-card input{
+        font-size: 12px;
+    }
+
+    .flow{
         font-size: 12px;
     }
 
