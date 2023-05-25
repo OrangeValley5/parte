@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>mutualbenefits</title>
 </head>
 <body>
@@ -21,14 +23,14 @@
             <li><a href="login.html" class="active">Sign In</a></li>
         </ul>
     </nav>
-    <div class="prev-container">
-        <h1>We've got a plan <br> that's perfect for you</h1>
-        <p class="pee">We want you to love it without worrying!
+    <div class="prev-container" >
+        <h1 data-aos="fade-up">We've got a plan <br> that's perfect for you</h1>
+        <p data-aos="fade-up" class="pee">We want you to love it without worrying!
              All subscription has a 30-day money-back guarantee.</p>
     
 
-    <div class="grid">
-        <div class="grid-container">
+    <div class="grid" data-aos="fade-up">
+        <div class="grid-container" data-aos="fade-up">
             <h4>Lite plan</h4>
             <div class="amount">
                 <h2>$10</h2>
@@ -65,7 +67,7 @@
         </div>
 
 
-        <div class="grid-container">
+        <div class="grid-container" data-aos="fade-up">
             <h4>Basic plan</h4>
             <div class="amount">
                 <h2>$25</h2>
@@ -101,7 +103,7 @@
             </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container" data-aos="fade-up">
             <div class="first-row">
                 <h4>Premium plan</h4>
                 <div class="tag">
@@ -142,7 +144,7 @@
             </div>
         </div>
 
-        <div class="grid-container">
+        <div class="grid-container" data-aos="fade-up">
             <h4>Ultimate plan</h4>
             <div class="amount">
                 <h2>$100</h2>
@@ -187,5 +189,9 @@
     </div>
 </footer>
 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
