@@ -579,10 +579,13 @@ footer p{
    height: 100%;
    padding: 50px 10rem;
    background: #191e23; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .sub-container{
-    width: 100%;
+    
     height: 100%;
     border-radius: 20px;
     border: 1px solid #777;
@@ -647,6 +650,9 @@ footer p{
     width: 450px;
    
 }
+
+
+
 
 
 
@@ -795,6 +801,7 @@ footer p{
     }
 
     .sub-container{
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 5rem;
@@ -878,7 +885,7 @@ width: 100%;
 
 #bbb{
     margin-bottom: 30px;
-    width: 20%;
+    width: 30%;
 }
 
 .col2 button{
@@ -1584,3 +1591,5 @@ background-color: #191e23;
     }
   }
 
+
+  
