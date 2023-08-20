@@ -99,7 +99,7 @@ nav a{
 
 .col2 h2{
     margin-bottom: 45px;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .labels{
@@ -107,7 +107,7 @@ nav a{
 }
 
 .col2 label{
-    margin-right: 1rem;
+    
     border: 1px solid #fff;
     padding: 18px 30px 18px 10px;
     border-radius: 5px;
@@ -782,7 +782,8 @@ footer p{
     }
 
     .col2 h2{
-        font-size: 40px;
+        font-size: 20px;
+        
     }
 
     .col2 label{
