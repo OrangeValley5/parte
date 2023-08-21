@@ -107,13 +107,18 @@ nav a{
 }
 
 .col2 label{
-    
-    border: 1px solid #fff;
-    padding: 18px 30px 18px 10px;
+    width: 100%;
+    /** border: 1px solid #fff; **/
+    padding: 4px 4px 4px 4px;
     border-radius: 5px;
-    background-color: #555;
+    /** background-color: #555; **/
     font-size: 16px;
     transition: 0.3s ease-out;
+}
+
+.labels input{
+    width: 100%;
+    height: 50px;
 }
 
 .col2 label:hover{
