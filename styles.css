@@ -270,6 +270,7 @@ margin-bottom: 20px;
 .section3a{
     padding: 80px 4rem;
     width: 100%;
+    height: 100vh;
 }
 
 .profile-header{
@@ -350,131 +351,21 @@ margin-bottom: 20px;
     
 }
 
-.profile-card2{
-    width: 270px;
-    height: 300px;
-    border-radius: 10px;
-    background: url(images/user5.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.profile-card3{
-    width: 270px;
-    height: 300px;
-    border-radius: 10px;
-    background: url(images/user3.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.profile-card4{
-    width: 270px;
-    height: 300px;
-    border-radius: 10px;
-    background: url(images/user4.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
 .profile-card5{
     width: 270px;
-    height: 300px;
+    height: 600px;
     border-radius: 10px;
-    background: url(images/b1.jpg);
+    background: url(images/phone.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.profile-card6{
-    width: 270px;
-    height: 300px;
-    border-radius: 10px;
-    background: url(images/b5.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-.profile-card7 {
-    width: 270px;
-    height: 300px;
-    border-radius: 10px;
-    background: url(images/b6.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-.profile-card8{
-    width: 270px;
-    height: 300px;
-    border-radius: 10px;
-    background: url(images/b4.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-.profile-card4a{
-    width: 270px;
-    height: 300px;
-    border-radius: 10px;
-    background: url(images/user6.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.profile-card4b{
-    width: 270px;
-    height: 300px;
-    border-radius: 10px;
-    background: url(images/user7.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.profile-card8a{
-    width: 270px;
-    height: 300px;
-    border-radius: 10px;
-    background: url(images/b8.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.profile-card8b{
-    width: 270px;
-    height: 300px;
-    border-radius: 10px;
-    background: url(images/b9.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.sizing{
-    width: 240px;
-    height: 240px;
-}
 
 
 
@@ -494,28 +385,9 @@ margin-bottom: 20px;
     background-color: rgba(245, 245, 245, 0.8) ;
 }
 
-.profile-info {
-    text-decoration: none;
-    color: #000;
-}
 
-.profile-info p{
-    font-size: 15px;
-    color: #3b3b3b;
-}
 
-.profile-info h4{
-    font-size: 20px;
-}
 
-.profile-info i{
-    font-size: 24px;
-    color: #34383d;
-}
-
-.profile-info span{
-    font-weight: normal;
-}
 
 .sizing:hover{
     transition:  0.3s ease-out;
@@ -1082,9 +954,7 @@ background-color: #191e23;
         flex-wrap: wrap;
     }
 
-    .sizing{
-        height: 250px;
-    }
+    
 }
 
 
@@ -1169,13 +1039,7 @@ background-color: #191e23;
             justify-content: none;
         }
 
-        .sizing {
-            width: 200px;
-            height: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
+        
 
         .profile-info{
             display: flex;
@@ -1216,13 +1080,7 @@ background-color: #191e23;
         justify-content: none;
     }
 
-    .sizing {
-        width: 150px;
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  
 
     .profile-info{
         display: flex;
