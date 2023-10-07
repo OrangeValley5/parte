@@ -116,6 +116,9 @@
 body{
     margin: 0px;
     font-family: 'Poppins';
+    color: #191e23;
+    background-size: cover;
+    background-position: center;
     background-image: linear-gradient(rgba(0,0,0,1.85), rgba(0,0,0,0.85)),
     url(https://images.unsplash.com/photo-1579546928937-641f7ac9bced?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=339&q=80); 
 }
@@ -126,7 +129,7 @@ body{
 
 
 
-/*  --------LOgin-------  */
+/*  --------LOGIN-------  */
 
 .section{
     /** height: 100vh; **/
