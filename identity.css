@@ -117,6 +117,8 @@ body{
     margin: 0px;
     font-family: 'Poppins';
     background-color: #191e23;
+    background-image: linear-gradient(rgba(0,0,0,1.85), rgba(0,0,0,0.85)),
+
 }
 
 
