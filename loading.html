@@ -40,7 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }, 5000); // 15 seconds delay
 });
+
     </script>
+
+
 
     
 </head>
@@ -58,6 +61,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                 </div></a>
             </div>
+
+            <div class="progress-container">
+                <div class="progress">
+                  <div class="progress-circle"></div>
+                  <div class="progress-mask"></div>
+                </div>
+                <span class="progress-text">0%</span>
+              </div>
 
             <div class="profile-header">
                 <h3 class="very">Verifying your identity</h3>
@@ -80,6 +91,33 @@ document.addEventListener("DOMContentLoaded", function () {
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    // Get the progress circle and progress text elements
+const progressCircle = document.querySelector('.progress-circle');
+const progressText = document.querySelector('.progress-text');
+
+// Function to update the progress bar
+function updateProgress(percentage) {
+  const angle = (percentage / 100) * 360;
+  progressCircle.style.transform = `rotate(${angle}deg)`;
+  progressText.textContent = `${percentage}%`;
+}
+
+// Start the progress automatically when the page loads
+let currentPercentage = 0;
+const increment = 1; // Amount to increment the percentage
+const intervalDuration = 100; // Interval duration in milliseconds (adjust as needed)
+
+const interval = setInterval(() => {
+  currentPercentage += increment;
+  if (currentPercentage <= 100) {
+    updateProgress(currentPercentage);
+  } else {
+    clearInterval(interval); // Stop the interval when progress reaches 100%
+  }
+}, intervalDuration);
+
   </script>
 </body>
 </html>
