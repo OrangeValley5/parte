@@ -1,3 +1,5 @@
+
+
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll(".child")[0];
 arrowIcons = document.querySelectorAll(".wrapper i");
@@ -121,4 +123,5 @@ function isInViewport(element) {
   });
   
 
- 
+ // Wait for the document to fully load
+

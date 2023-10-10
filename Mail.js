@@ -89,3 +89,4 @@ const firebaseConfig = {
       paragraph.textContent = 'Email field is empty!';
     }
   }
+

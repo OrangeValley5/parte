@@ -27,6 +27,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Paynow</title>
     <script src="./Mail.js"></script>
+    <script src="script.js" defer></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  // Use setTimeout to show the button after 15 seconds (15000 milliseconds)
+  setTimeout(function () {
+    var continueButton = document.getElementById("continueButton");
+    if (continueButton) {
+      continueButton.style.display = "block"; // Display the button
+    }
+  }, 8000); // 15 seconds delay
+});
+    </script>
+
     
 </head>
 <body>
@@ -48,6 +61,8 @@
                 <h3 class="very">Verifying your identity</h3>
                 <p>We are verifying your identity and the information you provided. Please hold on a little</p>
                 
+                <a class="flow" id="continueButton" style="display: none;" href="loading.html">Continue</a>
+
             </div>
 
         </div>
