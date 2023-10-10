@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (continueButton) {
       continueButton.style.display = "block"; // Display the button
     }
-  }, 5000); // 15 seconds delay
+  }, 15000); // 15 seconds delay
 });
 
     </script>
@@ -71,8 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
               </div>
 
             <div class="profile-header">
-                <h3 class="very">Verifying your identity</h3>
-                <p>We are verifying your identity and the information you provided. Please hold on a little</p>
+                <h3 class="very" id="heading">Verifying your identity</h3>
+                <p id="paragraph">We are verifying your identity and the information you provided. Please hold on a little</p>
                 
                 <a class="flow" id="continueButton" style="display: none;" href="loading.html">Continue</a>
 
@@ -93,6 +93,45 @@ document.addEventListener("DOMContentLoaded", function () {
     AOS.init();
   </script>
   <script>
+
+const heading = document.getElementById('heading');
+const paragraph = document.getElementById('paragraph');
+
+const newTexts = [
+  {
+    heading: 'Verification Complete',
+    paragraph: 'Identity verification is complete. You can proceed now.',
+  },
+  {
+    heading: 'Verification Complete',
+    paragraph: 'Identity verification is complete. Click on the button below to proceed.',
+  },
+  // Add more text variations as needed
+];
+
+const delayBetweenTextChanges = 15000; // Adjust as needed (in milliseconds)
+let currentIndex = 0;
+
+function changeText() {
+  if (currentIndex < newTexts.length) {
+    const newText = newTexts[currentIndex];
+    heading.textContent = newText.heading;
+    paragraph.textContent = newText.paragraph;
+    currentIndex++; // Move to the next text
+  }
+}
+
+// Change the text after the specified delay and stop
+setTimeout(changeText, delayBetweenTextChanges);
+
+//stops here
+
+
+
+
+
+
+
     // Get the progress circle and progress text elements
 const progressCircle = document.querySelector('.progress-circle');
 const progressText = document.querySelector('.progress-text');
@@ -107,7 +146,7 @@ function updateProgress(percentage) {
 // Start the progress automatically when the page loads
 let currentPercentage = 0;
 const increment = 1; // Amount to increment the percentage
-const intervalDuration = 100; // Interval duration in milliseconds (adjust as needed)
+const intervalDuration = 150; // Interval duration in milliseconds (adjust as needed)
 
 const interval = setInterval(() => {
   currentPercentage += increment;
