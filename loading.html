@@ -28,15 +28,17 @@
     <title>Paynow</title>
     <script src="./Mail.js"></script>
     <script src="script.js" defer></script>
+    
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+      // Wait for the document to fully load
+document.addEventListener("DOMContentLoaded", function () {
   // Use setTimeout to show the button after 15 seconds (15000 milliseconds)
   setTimeout(function () {
     var continueButton = document.getElementById("continueButton");
     if (continueButton) {
       continueButton.style.display = "block"; // Display the button
     }
-  }, 8000); // 15 seconds delay
+  }, 5000); // 15 seconds delay
 });
     </script>
 
