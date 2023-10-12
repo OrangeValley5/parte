@@ -1521,7 +1521,7 @@ background-color: #191e23;
 /****************** LOADING **********************/
 .section1b{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #191e23;
     padding: 25px 0.5rem;
     color: white;
