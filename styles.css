@@ -1582,7 +1582,6 @@ background-color: #191e23;
 .section1b p{
     font-size: 10px;
     margin-top: 8px;
-    margin-right: 20px;
     margin-bottom: 20px;
     color: #a4a4a4;
 }
@@ -1635,7 +1634,40 @@ background-color: #191e23;
 
   .amountbox {
     width: 100%;
-    height: 100px;
+    height: 80px;
     background: rgb(0, 228, 87);
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section1b h6 {
+    font-weight: normal;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+
+  .coverbtn {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem;
+    border-radius: 100px;
+    border: 3px solid white;
+  }
+
+  .amountcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  .amountbox h2{
+    color: white;
+    font-size: 20px;
   }
