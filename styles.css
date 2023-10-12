@@ -1775,6 +1775,7 @@ background-color: #191e23;
   }
 
   .details {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -1802,5 +1803,72 @@ background-color: #191e23;
 
 .section3b-dashboard p {
     font-size: 10px;
-    margin-bottom: 20px;
+    
 }
+
+.dashboardbox {
+    width: 100%;
+    height: 140px;
+    background: rgb(0, 228, 87);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .dashboardbox2 {
+    width: 100%;
+    background: rgb(0, 228, 87);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .dashcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+
+
+  .dashcont img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .divider2{
+    width: 100%;
+    background: white;
+    height: 1px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+  }
+
+
+  
+  .appbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .appbox h2{
+    font-size: 12px;
+  }
+
+  .appbox img{
+    width: 10px;
+    height: 10px;
+  }
