@@ -1671,3 +1671,8 @@ background-color: #191e23;
     color: white;
     font-size: 20px;
   }
+
+  .amountcont img{
+    width: 20px;
+    height: 20px;
+  }
