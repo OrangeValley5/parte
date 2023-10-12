@@ -109,7 +109,7 @@
                 </div>
                 <div class="details">
                     <p>Duration</p>
-                    <p>91 days</p>
+                    <p id="selectedDuration">91 days</p>
                 </div>
                 <div class="details">
                     <p>Date</p>
@@ -183,21 +183,26 @@ updateAmount();
 
 //BACKGROUND CHANGE
 
-// Function to select a duration and update styles
+// Function to update the selected duration
 function selectDuration(element) {
   // Get all duration elements
   const durationElements = document.querySelectorAll('.durationsmall');
 
   // Set the background color for the clicked element
   element.style.backgroundColor = 'rgb(0, 228, 87)';
-  
+
   // Reset the background color for unselected elements
   durationElements.forEach((el) => {
     if (el !== element) {
       el.style.backgroundColor = '#232b32';
     }
   });
+
+  // Update the selected duration text
+  const selectedDuration = element.textContent.trim();
+  document.getElementById('selectedDuration').textContent = selectedDuration;
 }
+
 
 
  </script>
