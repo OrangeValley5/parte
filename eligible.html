@@ -113,7 +113,7 @@
                 </div>
                 <div class="details">
                     <p>Date</p>
-                    <p>12/10/2023</p>
+                    <p id="currentDate">15/10/2023</p>
                 </div>
             </div>
 
@@ -202,6 +202,20 @@ function selectDuration(element) {
   const selectedDuration = element.textContent.trim();
   document.getElementById('selectedDuration').textContent = selectedDuration;
 }
+
+
+//DISPLAY CURRENT DATE
+
+// Function to update the current date
+function updateCurrentDate() {
+  const currentDateElement = document.getElementById('currentDate');
+  const currentDate = new Date(); // Get the current date
+  const formattedDate = currentDate.toLocaleDateString(); // Format the date as a string
+  currentDateElement.textContent = formattedDate; // Update the content with the current date
+}
+
+// Call the function to set the initial current date
+updateCurrentDate();
 
 
 
