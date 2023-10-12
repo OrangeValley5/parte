@@ -1733,16 +1733,18 @@ background-color: #191e23;
     
   }
 
-  .durationbig {
-    display: flex;
-    justify-content: space-between;
-  }
+ 
   .durationsmall p {
     font-size: 12px;
   }
 
   .durationsmall1 p{
     font-size: 12px;
+  }
+
+  .durationbig {
+    display: flex;
+    justify-content: space-between;
   }
 
   .durationsmall1 {
@@ -1776,3 +1778,29 @@ background-color: #191e23;
     display: flex;
     justify-content: space-between;
   }
+
+
+  /******** DASHBOARD **************/
+
+  .profile-header-dashboard {
+    display: flex;
+  }
+
+ .very{
+    margin-left: 4px;
+  }
+
+
+
+.section3b-dashboard{
+    padding: 10px 0.6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.section3b-dashboard p {
+    font-size: 10px;
+    margin-bottom: 20px;
+}

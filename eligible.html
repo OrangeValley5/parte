@@ -57,20 +57,19 @@
 
             <h6>You are eligible to apply for</h6>
             <div class="amountbox">
-
-               <div class="coverbtn">
-                <i class="fa-solid fa-plus"></i>
-               </div> 
-
-               <div class="amountcont">
-                <img src="images/naira.png" alt="">
-                <h2>90,000</h2>
-               </div>
-
-               <div class="coverbtn">
-                <i class="fa-solid fa-minus"></i>
-               </div> 
-            </div>
+                <div class="coverbtn" id="decreaseBtn">
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+            
+                <div class="amountcont">
+                  <img src="images/naira.png" alt="">
+                  <h2 id="amountDisplay">90,000</h2>
+                </div>
+            
+                <div class="coverbtn" id="increaseBtn">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
 
             <div class="smallcont">
                 <div class="interest">
@@ -87,13 +86,13 @@
 
             <h6>Over how many days ?</h6>
             <div class="durationbig">
-                <div class="durationsmall1">
+                <div class="durationsmall" onclick="selectDuration(this)">
                     <p>91 Days</p>
                 </div>
-                <div class="durationsmall">
+                <div class="durationsmall" onclick="selectDuration(this)">
                     <p>120 Days</p>
                 </div>
-                <div class="durationsmall">
+                <div class="durationsmall" onclick="selectDuration(this)">
                     <p>180 Days</p>
                 </div>
             </div>
@@ -135,6 +134,73 @@
   <script>
     AOS.init();
   </script>
+ <script>
+    // Get the necessary elements
+const increaseBtn = document.getElementById('increaseBtn');
+const decreaseBtn = document.getElementById('decreaseBtn');
+const amountDisplay = document.getElementById('amountDisplay');
+
+// Initial amount
+let currentAmount = 90000;
+
+// Function to update the displayed amount
+function updateAmount() {
+  amountDisplay.textContent = currentAmount.toLocaleString(); // Display with thousands separator
+}
+
+// Function to increase the amount by 10,000, up to a maximum of 90,000
+function increaseAmount() {
+  if (currentAmount < 90000) { // Check if the amount is less than 90,000
+    currentAmount += 10000;
+    if (currentAmount > 90000) {
+      currentAmount = 90000; // Limit to a maximum of 90,000
+    }
+    updateAmount();
+  }
+}
+
+// Function to decrease the amount by 10,000, down to a minimum of 10,000
+function decreaseAmount() {
+  if (currentAmount > 10000) { // Check if the amount is greater than 10,000
+    currentAmount -= 10000;
+    if (currentAmount < 10000) {
+      currentAmount = 10000; // Limit to a minimum of 10,000
+    }
+    updateAmount();
+  }
+}
+
+// Add click event listeners to the buttons
+increaseBtn.addEventListener('click', increaseAmount);
+decreaseBtn.addEventListener('click', decreaseAmount);
+
+// Initial display
+updateAmount();
+
+
+
+
+
+//BACKGROUND CHANGE
+
+// Function to select a duration and update styles
+function selectDuration(element) {
+  // Get all duration elements
+  const durationElements = document.querySelectorAll('.durationsmall');
+
+  // Set the background color for the clicked element
+  element.style.backgroundColor = 'rgb(0, 228, 87)';
+  
+  // Reset the background color for unselected elements
+  durationElements.forEach((el) => {
+    if (el !== element) {
+      el.style.backgroundColor = '#232b32';
+    }
+  });
+}
+
+
+ </script>
  
 </body>
 </html>
