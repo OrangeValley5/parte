@@ -1787,6 +1787,10 @@ background-color: #191e23;
     display: flex;
   }
 
+  #paragraph{
+    font-size: 10px;
+  }
+
  .very{
     margin-left: 4px;
   }
@@ -1801,7 +1805,7 @@ background-color: #191e23;
     justify-content: start;
 }
 
-.section3b-dashboard p {
+.dash-option p {
     font-size: 10px;
     
 }
@@ -1819,6 +1823,10 @@ background-color: #191e23;
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .dashboardbox p {
+     font-size:  10px;
   }
 
   .dashboardbox2 {
@@ -1885,7 +1893,16 @@ background-color: #191e23;
     background: #232b32;
     padding: 0.5rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     border-radius: 10px;
+  }
+
+  #dash-subtitle {
+    font-size: 8px;
+    color: #b5b5b5;
+  }
+
+  .dash-option i{
+    margin-bottom: 8px;
   }
