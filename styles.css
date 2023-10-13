@@ -1815,6 +1815,7 @@ background-color: #191e23;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
@@ -1871,4 +1872,20 @@ background-color: #191e23;
   .appbox img{
     width: 10px;
     height: 10px;
+  }
+
+  .dash-option-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .dash-option {
+    height: 100px;
+    background: #232b32;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
   }
