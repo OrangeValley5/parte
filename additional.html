@@ -97,7 +97,7 @@
                   </div>
                   
     
-                  <a class="flow"  onclick="payWithMonnify()" href="bank.html">Continue</a>
+                  <a class="flow"  onclick="payWithMonnify()" href="b">Continue</a>
 
                   
                 
@@ -112,6 +112,43 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    // Select elements
+const select = document.querySelector('.select');
+const caret = document.querySelector('.caret');
+const menu = document.querySelector('.menu');
+const options = document.querySelectorAll('.menu li');
+const selected = document.querySelector('.selected');
+
+// Toggle dropdown menu when select is clicked
+select.addEventListener('click', () => {
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  caret.classList.toggle('caret-rotate');
+});
+
+// Handle option click events
+options.forEach(option => {
+  option.addEventListener('click', () => {
+    selected.innerText = option.innerText;
+    menu.style.display = 'none';
+
+    // Remove the "active" class from all options
+    options.forEach(opt => opt.classList.remove('active'));
+
+    // Add "active" class to the clicked option
+    option.classList.add('active');
+  });
+});
+
+// Close the dropdown if the user clicks outside of it
+document.addEventListener('click', (event) => {
+  if (!event.target.matches('.select') && !event.target.matches('.selected')) {
+    menu.style.display = 'none';
+    caret.classList.remove('caret-rotate');
+  }
+});
+
   </script>
 </body>
 </html>

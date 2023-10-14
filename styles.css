@@ -1400,6 +1400,11 @@ background-color: #191e23;
     color: white;
   }
 
+
+
+
+  
+
   .login-card button{
     height: 45px;
     border-radius: 5px;
@@ -2044,3 +2049,21 @@ background-color: #191e23;
     text-decoration: none;
     color: white; 
   }
+
+
+  /* Hide the dropdown menu by default */
+.menu {
+    display: none;
+  }
+  
+  /* Style the select element */
+  .select {
+    cursor: pointer;
+  }
+  
+  /* Add styles for the active item */
+  .menu li.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
