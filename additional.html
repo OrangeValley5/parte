@@ -50,43 +50,70 @@
                     <input type="text" class="input-field" placeholder="Select *">
                   </div>
 
-                  <p>Employment Status</p>
-                  <div class="input-container">
-                    <input type="text" class="input-field" placeholder="Select *">
-                  </div>
-
-                  <p>Monthly Income </p>
-                  <div class="input-container">
-                    <input type="text" class="input-field" placeholder="How much do you make Monthly ?">
-                  </div>
-
                   <p>Years of working experience</p>
-                  <div onclick="" class="dropdown">
-                    <div class="select">
-                        <span class="selected">Figma</span>
-                        <div class="caret"></div>
+                  <div onclick="" class="dropdown2">
+                    <div class="select2">
+                        <span class="selected2">Figma</span>
+                        <div class="caret2"></div>
                       </div>
-                      <ul class="menu">
+                      <ul class="menu2">
                         <li>Framer</li>
                         <li>Sketch</li>
                         <li>Invasion Studio</li>
-                        <li class="active">Figma</li>
+                        <li class="active2">Figma</li>
                         <li>Adobe XD</li>
                       </ul>
                   </div>
 
-                  <p>Years of working experience</p>
-                  <div class="dropdown">
-                    <div class="select">
-                        <span class="selected">Figma</span>
-                        <div class="caret"></div>
+                  <p>Employment status</p>
+                  <div class="dropdown2">
+                    <div class="select2">
+                        <span class="selected2">Employee</span>
+                        <div class="caret2"></div>
                       </div>
-                      <ul class="menu">
-                        <li>Framer</li>
-                        <li>Sketch</li>
-                        <li>Invasion Studio</li>
-                        <li class="active">Figma</li>
-                        <li>Adobe XD</li>
+                      <ul class="menu2">
+                        <li>Worker</li>
+                        <li>Self-Employed</li>
+                        <li>Unemployed</li>
+                        <li class="active2">Employee</li>
+                        
+                      </ul>
+                  </div>
+
+                  <p>Specialization</p>
+                  <div class="dropdown2">
+                    <div class="select2">
+                        <span class="selected2">Information and Communication</span>
+                        <div class="caret2"></div>
+                      </div>
+                      <ul class="menu2">
+                        <li>Engineering</li>
+                        <li>Hospitality and social services</li>
+                        <li>Business and Finance</li>
+                        <li class="active2">Information and Communication</li>
+                        <li>Teaching/Education</li>
+                        <li>Community and Social Services</li>
+                        <li>Health and Medicine</li>
+                        <li>Government</li>
+                        <li>Transport</li>
+                        <li>Architecture/Constructions</li>
+                      </ul>
+                  </div>
+
+
+                  <p>Monthly Income</p>
+                  <div class="dropdown2">
+                    <div class="select2">
+                        <span class="selected2">N10,000 - N50,000</span>
+                        <div class="caret2"></div>
+                      </div>
+                      <ul class="menu2">
+                        <li class="active2">10,000 - N50,000</li>
+                        <li>N50,000 - N150,000</li>
+                        <li>N150,000 - N250,000</li>
+                        <li>N250,000 - N500,000</li>
+                        <li>N500,000 - N750,000</li>
+                        <li>N750,000 & Above</li>
                       </ul>
                   </div>
 
@@ -114,41 +141,48 @@
     AOS.init();
   </script>
   <script>
-    // Select elements
-const select = document.querySelector('.select');
-const caret = document.querySelector('.caret');
-const menu = document.querySelector('.menu');
-const options = document.querySelectorAll('.menu li');
-const selected = document.querySelector('.selected');
+    // Select all dropdown elements with class "dropdown2"
+const dropdowns2 = document.querySelectorAll('.dropdown2');
 
-// Toggle dropdown menu when select is clicked
-select.addEventListener('click', () => {
-  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-  caret.classList.toggle('caret-rotate');
-});
+// Loop through all dropdown elements
+dropdowns2.forEach(dropdown => {
+  // Get inner elements from each dropdown
+  const select = dropdown.querySelector('.select2');
+  const caret = dropdown.querySelector('.caret2');
+  const menu = dropdown.querySelector('.menu2');
+  const options = dropdown.querySelectorAll('.menu2 li');
+  const selected = dropdown.querySelector('.selected2');
 
-// Handle option click events
-options.forEach(option => {
-  option.addEventListener('click', () => {
-    selected.innerText = option.innerText;
-    menu.style.display = 'none';
+  // Toggle dropdown menu when select is clicked
+  select.addEventListener('click', () => {
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    caret.classList.toggle('caret2-rotate');
+  });
 
-    // Remove the "active" class from all options
-    options.forEach(opt => opt.classList.remove('active'));
+  // Handle option click events
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      selected.innerText = option.innerText;
+      menu.style.display = 'none';
 
-    // Add "active" class to the clicked option
-    option.classList.add('active');
+      // Remove the "active2" class from all options
+      options.forEach(opt => opt.classList.remove('active2'));
+
+      // Add "active2" class to the clicked option
+      option.classList.add('active2');
+    });
+  });
+
+  // Close the dropdown if the user clicks outside of it
+  document.addEventListener('click', (event) => {
+    if (!event.target.matches('.select2') && !event.target.matches('.selected2')) {
+      menu.style.display = 'none';
+      caret.classList.remove('caret2-rotate');
+    }
   });
 });
 
-// Close the dropdown if the user clicks outside of it
-document.addEventListener('click', (event) => {
-  if (!event.target.matches('.select') && !event.target.matches('.selected')) {
-    menu.style.display = 'none';
-    caret.classList.remove('caret-rotate');
-  }
-});
-
   </script>
+  
 </body>
 </html>
