@@ -411,6 +411,8 @@ background: #23242a;
     transform: translateX(-50%);
     transition: 0.2s;
     z-index: 1;
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto; /* Enable vertical scrollbar */
 }
 
 .dropdown2{
