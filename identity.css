@@ -431,7 +431,7 @@ background: #23242a;
 
 .selected2{
   color: white;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .caret2 {
@@ -448,7 +448,7 @@ background: #23242a;
   margin: 0.3em 0;
   border-radius: 0.5em;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .menu2 li.active2 {
