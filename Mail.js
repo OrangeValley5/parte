@@ -1,4 +1,6 @@
 
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyAYZ9HJYrtdVxJfDPtOBUhUoeeS0LytRXA",
     authDomain: "parte-11191.firebaseapp.com",
@@ -89,4 +91,8 @@ const firebaseConfig = {
       paragraph.textContent = 'Email field is empty!';
     }
   }
+
+
+
+
 
