@@ -39,7 +39,7 @@
                 <p>First Name</p>
                 <div class="input-container">
                 
-                    <input id="email" type="email" class="input-field" placeholder="First Name">
+                    <input id="fname" type="email" class="input-field" placeholder="First Name">
                   </div>
 
                   <p>Middle Name</p>
@@ -130,6 +130,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    const name = localStorage.getItem('user_name');
+const nameDisplayInput = document.getElementById('fname');
+
+if (name) {
+  nameDisplayInput.value = name;
+}
   </script>
 </body>
 </html>
