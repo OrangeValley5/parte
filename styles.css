@@ -1803,6 +1803,11 @@ background-color: #191e23;
     align-items: center;
   }
 
+  .profile-header-dashboard a {
+    text-decoration: none;
+    color: white;
+  }
+
   #paragraph{
     font-size: 10px;
   }
@@ -2128,3 +2133,87 @@ background-color: #191e23;
     margin-bottom: 15px;
     opacity: 0.5;
 }
+
+/************ ACCOUNT ***************/
+
+.accountbox {
+    width: 100%;
+    height: 140px;
+    background: rgb(0, 228, 87);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .accountbox p {
+     font-size:  10px;
+  }
+
+  .accountbox2 {
+    width: 100%;
+    background: rgb(0, 228, 87);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .acctcont{
+    display: flex;
+    margin-right: 14px;
+    font-size: 10px;
+  }
+
+
+
+  .dashcont img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .divider2{
+    width: 100%;
+    background: white;
+    height: 1px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+  }
+
+  .acctsmallcont{
+    width: 100%;
+    height: 40px;
+    background: #232b32;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .acct-interest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .acct-line {
+    background: #777;
+    width: 2px;
+    height: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .acctsmallcont p {
+    font-size: 8px;
+    
+  }
