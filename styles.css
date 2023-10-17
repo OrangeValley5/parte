@@ -1799,6 +1799,8 @@ background-color: #191e23;
 
   .profile-header-dashboard {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   #paragraph{
