@@ -26,12 +26,12 @@
         
         <div class="login-card"  data-aos="fade-up">
             <h2>Create Account</h2>
-            <button class="create" ><a href="login.html"> Lets get you started with your account</a></button>
+            <div class="pee"><p> Lets get you started with your account</p></div>
             
             <form action="">
 
               <div class="input-container">
-                <i class="fa-solid fa-envelope icon" ></i>
+                <i class="fa-solid fa-user icon" ></i>
                 <input id="name" type="text" class="input-field" placeholder="First Name">
               </div>
 
@@ -104,10 +104,11 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
     const user = userCredential.user;
     alert('user created');
   localStorage.setItem('user_name', name);
+
     set(ref(database, 'users/' + user.uid), {
       name: name,
       email: email
-    });
+    })
 
     window.location.href = 'dashboard.html';
     // ...
