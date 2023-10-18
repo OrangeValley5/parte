@@ -2052,6 +2052,11 @@ background-color: #191e23;
     flex-direction: row;
   }
 
+  .repay-cont a{
+    text-decoration: none;
+    color: white;
+  }
+
   .details2 i {
     margin-right: 10px;
   }
