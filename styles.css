@@ -2061,6 +2061,10 @@ background-color: #191e23;
     margin-bottom: 10px;
   }
 
+  #heading { 
+    font-size: 14px;
+  }
+
   .details2 {
     width: 100%;
     display: flex;
