@@ -313,6 +313,56 @@
 
         </div>
 
+        
+        <div class="faqs">
+
+            <!--= <img class="image" src="https://images.pexels.com/photos/4350099/pexels-photo-4350099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""> -->
+
+
+            <div class="faq-header">
+                <h3>FAQ</h3>
+                <p>Frequently asked questions</p>
+            </div>
+            
+
+            <div class="faq">
+                <div class="question">What is Lorem Ipsum?
+                    <i class="arrow fa-solid fa-angle-right"></i>
+                </div>
+                <div class="answer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+              </div>
+
+              <div class="faq">
+                <div class="question">How can I contact support?
+                    <i class="arrow fa-solid fa-angle-right"></i>
+                </div>
+                <div class="answer">You can contact our support team by email at support@example.com or by phone at +123-456-7890.</div>
+              </div>
+
+              <div class="faq">
+                <div class="question">What payment methods do you accept?
+                    <i class="arrow fa-solid fa-angle-right"></i>
+                </div>
+                <div class="answer">We accept payments via credit cards, PayPal, and bank transfers.</div>
+              </div>
+
+              <div class="faq">
+                <div class="question">Is there a money-back guarantee?
+                    <i class="arrow fa-solid fa-angle-right"></i>
+                </div>
+                <div class="answer">Yes, we offer a 30-day money-back guarantee on our products and services.</div>
+              </div>
+
+              <div class="faq">
+                <div class="question">How do I reset my password?
+                    <i class="arrow fa-solid fa-angle-right"></i>
+                </div>
+                <div class="answer">You can reset your password by clicking on the "Forgot Password" link on the login page and following the instructions.</div>
+              </div>
+              
+
+
+        </div>
     
 
 
@@ -357,6 +407,9 @@
             </div>
         </div>
 
+       
+          
+
         <footer>
             <hr />
             <div class="subber">
@@ -392,6 +445,29 @@ function typeText() {
 }
 
 window.onload = typeText; // Start the typewriter effect when the page loads
+
+
+
+
+//FAQ
+const faqItems = document.querySelectorAll('.faq');
+
+faqItems.forEach((faqItem) => {
+  const question = faqItem.querySelector('.question');
+  const answer = faqItem.querySelector('.answer');
+  const arrow = question.querySelector('.arrow');
+
+  question.addEventListener('click', () => {
+    if (answer.style.display === 'block') {
+      answer.style.display = 'none';
+      arrow.style.transform = 'rotate(0deg)';
+    } else {
+      answer.style.display = 'block';
+      arrow.style.transform = 'rotate(90deg)';
+    }
+  });
+});
+
 
   </script>
 </body>
