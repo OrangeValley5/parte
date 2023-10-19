@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- Animation -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Mutual Benefits</title>
+    <title>Naija loan</title>
     <script src="./Mail.js"></script>
     
 </head>
@@ -42,7 +42,7 @@
         <div class="section1" >
             <div class="col-container" data-aos="fade-up">
                 <div class="col1">
-                    <h1>A better Instant Loan <br> solution </h1>
+                    <h1 id="typewriter-text">A better Instant Loan  solution </h1>
                     <div class="col1-div">
                         <p>We make the process of getting a loan fast and easy. We simplify the process through our quick and secure online form.
                          </p>
@@ -375,6 +375,24 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    const textElement = document.getElementById('typewriter-text');
+const text = textElement.innerHTML;
+textElement.innerHTML = ''; // Clear the original text
+
+let index = 0;
+
+function typeText() {
+  if (index < text.length) {
+    textElement.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeText, 50); // Adjust the duration between each character (50ms in this example)
+  }
+}
+
+window.onload = typeText; // Start the typewriter effect when the page loads
+
   </script>
 </body>
 </html>
