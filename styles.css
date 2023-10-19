@@ -2330,7 +2330,10 @@ background-color: #191e23;
 
   .question {
     border: 1px solid #b9b9b9;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 5px;
   }
 
