@@ -2256,7 +2256,7 @@ background-color: #191e23;
   .modal-content {
     position: relative;
     background-color: #191e23;
-    margin: 10% auto;
+    margin: 100% auto;
     padding: 20px;
     transition: 0.8s ease-in;
     border: 1px solid #888;
@@ -2288,7 +2288,7 @@ background-color: #191e23;
   }
   
   #fabButton {
-    background-color: #0073e6; /* Background color of the FAB */
+    background-color: rgb(0, 228, 87);
     color: #fff; /* Text color */
     border: none;
     border-radius: 50%; /* Make it circular */
