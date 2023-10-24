@@ -2368,4 +2368,11 @@ background-color: #191e23;
   }
   
   
+  .dis-img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .dis-div{
+    padding: 20px;
+  }
   
