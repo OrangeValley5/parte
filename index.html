@@ -53,13 +53,17 @@
                         <h2>How much do you want to borrow ?</h2>
                     </div>
                     <div class="labels">
-                       <label><input id="man" type="number" name="gender" value="man"/></label>
+                       
+                        <input id="amounts" class="amounts" type="text" name="amounts"  placeholder="₦5000"/>
+                      
                     
                     </div>
 
-                    <a href="review.html"><button >REQUEST LOAN</button></a>                  
+                    <a href="#"><button id="requestButton">REQUEST LOAN</button></a>                  
                 </div>
             </div>
+
+          
 
             <div class="sub-section" data-aos="fade-up" >
                 <div class="sub-section-col" >
@@ -508,6 +512,40 @@ faqItems.forEach((faqItem) => {
   });
 });
 
+
+
+//COMMA FOR AMOUNT
+
+
   </script>
+
+  <script>
+    
+const amountInput = document.getElementById("amounts");
+const requestButton = document.getElementById("requestButton");
+
+    requestButton.addEventListener("click", function () {
+        // Remove existing commas and non-numeric characters
+        let amount = amountInput.value.replace(/[^0-9]/g, "");
+
+        // Check if the input field is empty
+        if (amount.trim() === "") {
+            alert("Please enter an amount before requesting a loan.");
+        } else {
+            // Navigate to another page
+            window.location.href = "signup.html";
+        }
+    });
+
+amountInput.addEventListener("input", function () {
+    // Remove existing commas and non-numeric characters
+    let amount = this.value.replace(/[^0-9]/g, "");
+
+    // Add commas for thousands
+    amount = amount.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+    
+    this.value = amount;
+});
+    </script>
 </body>
 </html>

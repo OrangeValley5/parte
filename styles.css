@@ -2391,3 +2391,12 @@ background-color: #191e23;
   .download img{
     width: 140px;
   }
+
+  .amounts{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #777;
+  }
+
