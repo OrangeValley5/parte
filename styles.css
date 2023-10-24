@@ -283,7 +283,6 @@ margin-bottom: 20px;
 .section3a{
     padding: 80px 4rem;
     width: 100%;
-    height: 100vh;
 }
 
 .profile-header{
@@ -1269,6 +1268,9 @@ background-color: #191e23;
     width: calc(100% / 2);
 } 
 }
+
+
+/******************** RATINGS *******************/
 
 @media screen and (max-width: 550px) {
 
@@ -2380,3 +2382,12 @@ background-color: #191e23;
     padding: 20px;
   }
   
+  .download {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .download img{
+    width: 140px;
+  }
