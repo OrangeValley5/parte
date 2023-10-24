@@ -1274,7 +1274,6 @@ background-color: #191e23;
 
    .carousel .child{
     width: 90%;
-    height: 180px;
 } 
 
 .ratings i{
@@ -2371,8 +2370,13 @@ background-color: #191e23;
   .dis-img{
     width: 100%;
     border-radius: 20px;
+    margin-top: 18px;
   }
   .dis-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
   }
   
