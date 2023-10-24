@@ -2406,6 +2406,7 @@ background-color: #191e23;
     background-color: rgb(0, 228, 87);
     color: white;
     border: none;
+    height: 60px;
     cursor: pointer;
     animation: glowing 1s infinite alternate;
 }
