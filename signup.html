@@ -102,7 +102,7 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
   .then((userCredential) => {
     // Signed up 
     const user = userCredential.user;
-    alert('user created');
+    alert('Account created successfully');
   localStorage.setItem('user_name', name);
 
     set(ref(database, 'users/' + user.uid), {

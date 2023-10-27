@@ -2420,3 +2420,32 @@ background-color: #191e23;
         box-shadow: 0 0 20px rgb(0, 228, 87);
     }
 }
+
+
+.modal-container {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    bottom: 0; /* Start at the bottom of the viewport */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the modal content */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Style for the close button */
+.close-button {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    cursor: pointer;
+    color: #333;
+}

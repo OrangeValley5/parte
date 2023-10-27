@@ -30,7 +30,7 @@
 <body>
 
     <nav>
-        <h4 class="logo">Pay <span>Now</span></h4>
+        <h4 class="logo">Pay<span>Now</span></h4>
 
         <ul>
            <!-- <li><a href="login.html" class="active2">Sign In</a></li>-->
@@ -91,8 +91,8 @@
                     <h5>3</h5>
                     </div>
                     <h3>Funds Direct to Your Bank</h3>
-                    <p>There are no checks to deposit and no trips to the bank. <br />
-                        If approved, money is sent to your account as soon as the next business day.
+                    <p>There are no trips to the bank. <br />
+                        If approved,the money is sent to your account immediately.
                     </p>
                 </div>
             </div>
@@ -101,9 +101,9 @@
 
         <div class="section2"  data-aos="fade-up">
             <div class="section2-row">
-               <h2>Basic Loan <span class="span1">Requirements: </span>?</h2>
+               <h2>Basic Loan <span class="span1">Requirements </span></h2>
                <p>
-                Must be at least 18 years old. Must be a Nigerian citizen or Permanent Resident. Currently employed or receive steady income. Have a bank account to receive the funds, ideally with direct deposit.
+                Must be at least 18 years old. Must be a Nigerian citizen or Permanent Resident. Currently employed or receive steady income and have a bank account to receive the funds.
                </p>
             </div>
 
@@ -115,7 +115,7 @@
             </div>
 
             <div class="section2-row">
-               <h2>Privacy and information?</h2>
+               <h2>Privacy and information</h2>
                <p>
                We proritize our users privacy therefore your privacy matters a lot to us. Be rest assured that all of your information are Safe and not shared with any third-party.
                </p>
@@ -139,8 +139,8 @@
             <div class="section3-col">
                 <div class="section3-div">
                     <h4>Quick Loans</h4>
-                    <p>At paynow we've developed our application to be as straightforward and convenient
-                        as possible. There is no need to take the time to travel to a location.</p>
+                    <p>At paynow we've developed our application process to be as straightforward and convenient
+                        as possible.</p>
                 </div>
                 <div class="section3-div">
                     <h4>No Collaterals</h4>
@@ -408,6 +408,18 @@
 
         </div>
 
+        <button onclick="openModal()">Open Modal</button>
+
+    <!-- Modal Container -->
+    <div id="myModal" class="modal-container">
+        <!-- Modal Content -->
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Modal Content</h2>
+            <p>This is the content of the modal.</p>
+        </div>
+    </div>
+
     
 
 
@@ -459,7 +471,7 @@
             <hr />
             <div class="subber">
                 <p>&copy; 2023 PayNow loans</p>
-                <a href="https://doc-hosting.flycricket.io/mutualbenefits/b85cec96-aa34-4408-8e10-08b917a8e4a3/privacy"><p>Privacy policy</p></a>
+                <a href="#"><p>Privacy policy</p></a>
             </div>
         </footer>
 
@@ -547,5 +559,17 @@ amountInput.addEventListener("input", function () {
     this.value = amount;
 });
     </script>
+
+<script>
+    // Function to open the modal
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    // Function to close the modal
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+</script>
 </body>
 </html>
