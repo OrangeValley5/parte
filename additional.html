@@ -19,7 +19,6 @@
     <title>Login</title>
     <script src="./Mail.js"></script>
     <script src="./script.js"></script>
-    <script src="./dropdownn.js"></script>
     <script type="text/javascript" src="https://sdk.monnify.com/plugin/monnify.js"></script>
     <script>
        
@@ -37,11 +36,11 @@
         <div class="login-card"  data-aos="fade-up">
             <!--<h2>Personal Information</h2>-->
             
-            <form action="">
+            <form>
                 <p>Company Name</p>
                 <div class="input-container">
                 
-                    <input id="email" type="email" class="input-field" placeholder="Where do you work ?">
+                    <input id="comanyName" type="text" class="input-field" placeholder="Where do you work ?">
                   </div>
 
                  
@@ -100,11 +99,11 @@
 
                   <p>Company Address</p>
                   <div class="input-container">
-                    <input type="text" class="input-field" placeholder="How much do you make Monthly ?">
+                    <input type="text" class="input-field" id="companyAddress" placeholder="How much do you make Monthly ?">
                   </div>
                   
     
-                  <a class="flow"  onclick="payWithMonnify()" href="bank.html">Continue</a>
+                  <a class="flow"  href="bank.html">Continue</a>
 
                   
                 
@@ -114,7 +113,6 @@
     </div>
     
     <script src="./Mail.js"></script>
-    <script src="./dropdownn.js"></script>
     <script src="script.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>

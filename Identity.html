@@ -26,7 +26,7 @@
 
     </script>
 </head>
-<body>
+<body onload="retrieveDetails()">
     <div class="section">
         
         <h4>Personal Information</h4>
@@ -35,37 +35,37 @@
         <div class="login-card"  data-aos="fade-up">
             <!--<h2>Personal Information</h2>-->
             
-            <form action="">
+            <form>
                 <p>First Name</p>
                 <div class="input-container">
                 
-                    <input id="fname" type="email" class="input-field" placeholder="First Name">
+                    <input id="fname" type="email" class="input-field" id="firstName" placeholder="First Name">
                   </div>
 
                   <p>Middle Name</p>
 
                   <div class="input-container">
-                    <input type="text" class="input-field" placeholder="Optional">
+                    <input type="text" class="input-field" id="middleName" placeholder="Optional">
                   </div>
 
                   <p>Last Name</p>
                   <div class="input-container">
-                    <input type="text" class="input-field" placeholder="Enter your last name">
+                    <input type="text" class="input-field" id="lastName" placeholder="Enter your last name">
                   </div>
 
                   <p>State of origin </p>
                   <div class="input-container">
-                    <input type="text" class="input-field" placeholder="Your state of origin">
+                    <input type="text" class="input-field" id="stateOfOrigin" placeholder="Your state of origin">
                   </div>
 
                   <p>Phone Number</p>
                   <div class="input-container">
-                    <input type="number" class="input-field" placeholder="080********">
+                    <input type="number" class="input-field" id="phoneNumber" placeholder="080********">
                   </div>
 
                   <p>Home Address</p>
                   <div class="input-container">
-                    <input type="text" class="input-field" placeholder="Where do you live ?">
+                    <input type="text" class="input-field" id="homeAddress" placeholder="Where do you live ?">
                   </div>
 
                   <p>Gender</p>
@@ -116,7 +116,7 @@
                   
                  
 
-                  <a class="flow"  onclick="payWithMonnify()" href="additional.html">Continue</a>
+                  <a class="flow"  onclick="saveDetails()" href="additional.html">Continue</a>
 
                   
                 
@@ -138,6 +138,62 @@ const nameDisplayInput = document.getElementById('fname');
 if (name) {
   nameDisplayInput.value = name;
 }
+
+function saveDetails() {
+            localStorage.setItem('middleName', document.getElementById('middleName').value);
+            localStorage.setItem('lastName', document.getElementById('lastName').value);
+            localStorage.setItem('stateOfOrigin', document.getElementById('stateOfOrigin').value);
+            localStorage.setItem('phoneNumber', document.getElementById('phoneNumber').value);
+            localStorage.setItem('homeAddress', document.getElementById('homeAddress').value);
+            const genderOptions = document.querySelector('input[name="gender"]:checked');
+            if (genderOptions) {
+                localStorage.setItem('selectedGender', genderOptions.value);
+            }
+
+            const ageOptions = document.querySelector('input[name="age"]:checked');
+            if (ageOptions) {
+                localStorage.setItem('selectedAge', ageOptions.value);
+            }
+
+            const maritalOptions = document.querySelector('input[name="marital"]:checked');
+            if (maritalOptions) {
+                localStorage.setItem('selectedMarital', maritalOptions.value);
+            }
+        }
+
+        // Function to retrieve and pre-fill user details from local storage
+        function retrieveDetails() {
+            document.getElementById('middleName').value = localStorage.getItem('middleName') || '';
+            document.getElementById('lastName').value = localStorage.getItem('lastName') || '';
+            document.getElementById('stateOfOrigin').value = localStorage.getItem('stateOfOrigin') || '';
+            document.getElementById('phoneNumber').value = localStorage.getItem('phoneNumber') || '';
+            document.getElementById('homeAddress').value = localStorage.getItem('homeAddress') || '';
+            const selectedGender = localStorage.getItem('selectedGender');
+            if (selectedGender) {
+                document.querySelector(`input[name="gender"][value="${selectedGender}"]`).checked = true;
+            }
+
+            const selectedAge = localStorage.getItem('selectedAge');
+            if (selectedAge) {
+                document.querySelector(`input[name="age"][value="${selectedAge}"]`).checked = true;
+            }
+
+            const selectedMarital = localStorage.getItem('selectedMarital');
+            if (selectedMarital) {
+                document.querySelector(`input[name="marital"][value="${selectedMarital}"]`).checked = true;
+            }
+        }
+
+
+          // Function to save user options in local storage
+          function saveOptions() {
+            
+        }
+
+        // Function to retrieve and set user options from local storage
+        function retrieveOptions() {
+           
+        }
   </script>
 </body>
 </html>
