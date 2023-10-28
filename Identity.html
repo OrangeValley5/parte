@@ -17,14 +17,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Login</title>
-    <script src="./Mail.js"></script>
 
     <script type="text/javascript" src="https://sdk.monnify.com/plugin/monnify.js"></script>
-    <script>
-        
-
-
-    </script>
+    <script src="test.js">  </script>
 </head>
 <body onload="retrieveDetails()">
     <div class="section">
@@ -35,7 +30,7 @@
         <div class="login-card"  data-aos="fade-up">
             <!--<h2>Personal Information</h2>-->
             
-            <form>
+            <form  id='checkoutForm' class='checkoutForm'>
                 <p>First Name</p>
                 <div class="input-container">
                 
@@ -114,9 +109,8 @@
                   
                   
                   
-                 
 
-                  <a class="flow"  onclick="saveDetails()" href="additional.html">Continue</a>
+                  <a class="flow" type="submit"  onclick="saveDetails(), submitForm2()" href="additional.html">Continue</a>
 
                   
                 
@@ -125,7 +119,6 @@
         
     </div>
     
-    <script src="./Mail.js"></script>
     <script src="script.js" defer></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
@@ -195,5 +188,7 @@ function saveDetails() {
            
         }
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="./test.js"></script>
 </body>
 </html>

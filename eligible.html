@@ -117,7 +117,29 @@
                 </div>
             </div>
 
-            <a class="flow" href="dashboard.html">Submit</a>
+
+
+            <!-- Modal Container -->
+            <div id="myModal" class="modal-container">
+                <!-- Modal Content -->
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal()">&times;</span>
+                    <h2 >Service Charge</h2>
+                    <p>Your service charge for this application is NGN500. Please note that this charges will be refunded if your application is not approved
+                      Do you wish to continue ?
+                    </p>
+
+                    <div class="btn-divs">
+                      <div class="btnz btnz2" onclick="closeModal()">
+                        No
+                      </div>
+                      <a class="btnz" href="https://flutterwave.com/pay/div6qypz5qfk"> Yes</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <a class="flow" onclick="openModal()" href="#">Submit</a>
 
 
         </div>
@@ -220,6 +242,18 @@ updateCurrentDate();
 
 
  </script>
+
+<script>
+  // Function to open the modal
+  function openModal() {
+      document.getElementById("myModal").style.display = "block";
+  }
+
+  // Function to close the modal
+  function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+  }
+</script>
  
 </body>
 </html>
