@@ -27,7 +27,7 @@
 
     </script>
 </head>
-<body>
+<body onload="retrieveDetails()">
     <div class="section">
         
         <h4>Work Information</h4>
@@ -40,7 +40,7 @@
                 <p>Company Name</p>
                 <div class="input-container">
                 
-                    <input id="comanyName" type="text" class="input-field" placeholder="Where do you work ?">
+                    <input id="companyName" type="text" class="input-field" placeholder="Where do you work ?">
                   </div>
 
                  
@@ -99,11 +99,11 @@
 
                   <p>Company Address</p>
                   <div class="input-container">
-                    <input type="text" class="input-field" id="companyAddress" placeholder="How much do you make Monthly ?">
+                    <input type="text" class="input-field" id="companyAddress" placeholder="Where is your company located ?">
                   </div>
                   
     
-                  <a class="flow"  href="bank.html">Continue</a>
+                  <a class="flow" onclick="saveCompanyName" href="bank.html">Continue</a>
 
                   
                 
@@ -160,6 +160,31 @@ dropdowns2.forEach(dropdown => {
   });
 });
 
+  </script>
+  <script>
+   // Function to save the company name to local storage
+   function saveCompanyName() {
+            const companyNameInput = document.getElementById('companyName');
+            const companyName = companyNameInput.value;
+
+            // Save the company name in local storage
+            localStorage.setItem('companyName', companyName);
+
+            
+        }
+
+        // Function to retrieve and display the company name from local storage
+        function displayCompanyName() {
+            const companyNameInput = document.getElementById('companyName');
+            const savedCompanyName = localStorage.getItem('companyName');
+
+            if (savedCompanyName) {
+                companyNameInput.value = savedCompanyName;
+            }
+        }
+
+        // Call the function to display the company name when the page loads
+        displayCompanyName();
   </script>
   
 </body>
