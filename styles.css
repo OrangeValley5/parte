@@ -1301,7 +1301,7 @@ background-color: #191e23;
 /*  --------     LOGIN        -------  */
 
 .section{
-    height: 100vh;
+    height: 100%;
     color: #191e23;
     background-image: linear-gradient(rgba(0,0,0,1.85), rgba(0,0,0,0.85)),
     url(https://images.unsplash.com/photo-1579546928937-641f7ac9bced?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=339&q=80); 
@@ -1390,7 +1390,7 @@ background-color: #191e23;
   }
 
   .login-card2 .input-field {
-    padding-left: 30px;
+    padding-left: 10px;
     width: 100%;
     height: 40px;
     border-radius: 5px;
@@ -1788,6 +1788,7 @@ background-color: #191e23;
     padding: 0.5rem;
     width: 85px;
     display: flex;
+    row-gap: 8px;
     justify-content: center;
     border-radius: 10px;
   }
@@ -2488,3 +2489,36 @@ background-color: #191e23;
     border: 1px solid #777;
 }
 
+
+/************ DURATION IN INDEX *************/
+
+.durationsmall3 p {
+    font-size: 12px;
+  }
+
+  .durationsmall1 p{
+    font-size: 12px;
+  }
+
+  .durationbig3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+  }
+
+ 
+
+  .durationsmall3 {
+    background: #232b32;
+    padding: 0.5rem;
+    width: 70px;
+    display: flex;
+    row-gap: 8px;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .dura{
+    font-size: 12px;
+    
+  }

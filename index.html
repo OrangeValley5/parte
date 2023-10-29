@@ -428,17 +428,24 @@
                    
                     <div class="login-card2"  data-aos="fade-up">
                        
-                        <h5 class="alat" id="my-paragraph">Account not found !</h5>
                         <form action="">
                             <div class="input-container">
                                 
                                 <input id="email" type="number" class="input-field" placeholder="Enter Amount">
                               </div>
             
-                              <div class="input-container">
-                                
-                                <input type="number" class="input-field" placeholder="Duration">
-                              </div>
+                              <p class="dura">Duration</p>
+                              <div class="durationbig3">
+                                <div class="durationsmall3" onclick="selectDuration(this)">
+                                    <p>91 Days</p>
+                                </div>
+                                <div class="durationsmall3" onclick="selectDuration(this)">
+                                    <p>120 Days</p>
+                                </div>
+                                <div class="durationsmall3" onclick="selectDuration(this)">
+                                    <p>180 Days</p>
+                                </div>
+                            </div>
                               
                               
             
@@ -560,6 +567,30 @@ amountInput.addEventListener("input", function () {
     function closeModal() {
         document.getElementById("myModal").style.display = "none";
     }
+
+
+
+
+    //Make duration selectable
+
+    function selectDuration(element) {
+  // Get all duration elements
+  const durationElements = document.querySelectorAll('.durationsmall3');
+
+  // Set the background color for the clicked element
+  element.style.backgroundColor = 'rgb(0, 228, 87)';
+
+  // Reset the background color for unselected elements
+  durationElements.forEach((el) => {
+    if (el !== element) {
+      el.style.backgroundColor = '#232b32';
+    }
+  });
+
+  // Update the selected duration text
+  const selectedDuration = element.textContent.trim();
+  document.getElementById('selectedDuration').textContent = selectedDuration;
+}
 </script>
 </body>
 </html>
