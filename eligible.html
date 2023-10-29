@@ -113,7 +113,7 @@
                 </div>
                 <div class="details">
                     <p>Date</p>
-                    <p id="currentDate">15/10/2023</p>
+                    <p id="currentDate"></p>
                 </div>
             </div>
 
@@ -139,7 +139,7 @@
                 
             </div>
 
-            <a class="flow" onclick="openModal()" href="#">Submit</a>
+            <a class="flow" onclick="openModa" href="review.html">Submit</a>
 
 
         </div>
@@ -253,6 +253,24 @@ updateCurrentDate();
   function closeModal() {
       document.getElementById("myModal").style.display = "none";
   }
+</script>
+
+<script>
+  // Function to save the value of 'amountDisplay' to local storage
+  function saveAmountToLocalStorage() {
+      const amountDisplay = document.getElementById('amountDisplay');
+      const currentDate = document.getElementById('currentDate');
+
+      const amountValue = amountDisplay.textContent;
+      const dateValue = currentDate.textContent;
+
+      // Save the amount to local storage
+      localStorage.setItem('savedAmount', amountValue);
+      localStorage.setItem('savedDate', dateValue);
+  }
+
+  // Call the function to save the amount to local storage
+  saveAmountToLocalStorage();
 </script>
  
 </body>

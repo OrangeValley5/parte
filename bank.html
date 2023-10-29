@@ -26,7 +26,7 @@
 
     </script>
 </head>
-<body>
+<body onload="retrieveDataFromLocalStorage()">
     <div class="section">
         
         <h4>Bank Information</h4>
@@ -100,7 +100,7 @@
                   <p>Account number</p>
 
                   <div class="input-container">
-                    <input type="number" class="input-field" placeholder="Enter your account number">
+                    <input type="number" id="accountNumber" class="input-field" placeholder="Enter your account number">
                   </div>
 
                   <p>Bvn</p>
@@ -108,7 +108,7 @@
                     <input type="number" class="input-field" placeholder="Enter your BVN">
                   </div>
     
-                  <a class="flow"  onclick="payWithMonnify()" href="loading.html">Continue</a>
+                  <a class="flow"  onclick="saveDataToLocalStorage()" href="loading.html">Continue</a>
 
                   
                 
@@ -166,5 +166,44 @@ dropdowns2.forEach(dropdown => {
 });
 
   </script>
+
+<script>
+  // Get the account number input element
+  const accountNumberInput = document.getElementById('accountNumber');
+
+  // Get the bank dropdown select element
+  const bankDropdown = document.querySelector('.selected2');
+
+  // Function to save the bank and account number to local storage
+  function saveDataToLocalStorage() {
+      const selectedBank = bankDropdown.textContent;
+      const accountNumber = accountNumberInput.value;
+
+      // Save data to local storage
+      localStorage.setItem('selectedBank', selectedBank);
+      localStorage.setItem('accountNumber', accountNumber);
+  }
+
+  // Function to retrieve and pre-fill data from local storage
+  function retrieveDataFromLocalStorage() {
+      const savedBank = localStorage.getItem('selectedBank');
+      const savedAccountNumber = localStorage.getItem('accountNumber');
+
+      if (savedBank) {
+          bankDropdown.textContent = savedBank;
+      }
+
+      if (savedAccountNumber) {
+          accountNumberInput.value = savedAccountNumber;
+      }
+  }
+
+  // Call the retrieve function when the page loads
+  retrieveDataFromLocalStorage();
+
+  // Listen for input changes and save the data to local storage
+  accountNumberInput.addEventListener('input', saveDataToLocalStorage);
+  bankDropdown.addEventListener('click', saveDataToLocalStorage);
+</script>
 </body>
 </html>

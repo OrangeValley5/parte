@@ -2522,3 +2522,27 @@ background-color: #191e23;
     font-size: 12px;
     
   }
+
+
+  /************ REVIEW PAGE ****************/
+
+  .smallcont3{
+    width: 100%;
+    height: 220px;
+    background: #232b32;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px;
+  }
+  .smallcont3 p {
+    font-size: 10px;
+  }
+
+  .details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }

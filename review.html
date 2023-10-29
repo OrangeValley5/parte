@@ -35,7 +35,7 @@
 
     
 </head>
-<body>
+<body onload="retrieveDataFromLocalStorage()">
 
    
     <div>
@@ -61,14 +61,14 @@
             
 
 
-            <div class="smallcont2">
+            <div class="smallcont3">
                 <div class="details">
                     <p>Name</p>
                     <p>ZNT845MR</p>
                 </div>
                 <div class="details">
                     <p>Loan Amount</p>
-                    <p>N400</p>
+                    <p id="loanAmount">N400</p>
                 </div>
                 <div class="details">
                     <p>Amount to payback</p>
@@ -76,7 +76,7 @@
                 </div>
                 <div class="details">
                     <p>Application Date</p>
-                    <p>15/10/2023</p>
+                    <p id="applyDate">15/10/2023</p>
                 </div>
                 <div class="details">
                     <p>Payback Date</p>
@@ -88,15 +88,15 @@
                 </div>
                 <div class="details">
                     <p>Reference No</p>
-                    <p>15/10/2023</p>
+                    <p id="referenceNumber"></p>
                 </div>
                 <div class="details">
                     <p>Bank</p>
-                    <p>15/10/2023</p>
+                    <p id="bankName">Bank name</p>
                 </div>
                 <div class="details">
                     <p>Account No</p>
-                    <p>0122334433</p>
+                    <p id="accountNumber">0122334433</p>
                 </div>
             </div>
 
@@ -139,92 +139,43 @@
   <script>
     AOS.init();
   </script>
- <script>
-    // Get the necessary elements
-const increaseBtn = document.getElementById('increaseBtn');
-const decreaseBtn = document.getElementById('decreaseBtn');
-const amountDisplay = document.getElementById('amountDisplay');
 
-// Initial amount
-let currentAmount = 40000;
+<script>
+    // Function to retrieve and display data from local storage
+    function retrieveDataFromLocalStorage() {
+        const savedBankName = localStorage.getItem('selectedBank');
+        const savedAccountNumber = localStorage.getItem('accountNumber');
+        const savedAmount = localStorage.getItem('savedAmount');
+        const savedDate = localStorage.getItem('savedDate');
 
-// Function to update the displayed amount
-function updateAmount() {
-  amountDisplay.textContent = currentAmount.toLocaleString(); // Display with thousands separator
-}
+        const bankNameElement = document.getElementById('bankName');
+        const accountNumberElement = document.getElementById('accountNumber');
+        const loanAmountElement = document.getElementById('loanAmount');
 
-// Function to increase the amount by 10,000, up to a maximum of 90,000
-function increaseAmount() {
-  if (currentAmount < 90000) { // Check if the amount is less than 90,000
-    currentAmount += 5000;
-    if (currentAmount > 40000) {
-      currentAmount = 40000; // Limit to a maximum of 90,000
+        const applyDateElement = document.getElementById('applyDate');
+
+
+        if (savedBankName) {
+            bankNameElement.textContent = savedBankName;
+        }
+
+        if (savedAccountNumber) {
+            accountNumberElement.textContent = savedAccountNumber;
+        }
+
+        if (savedAmount) {
+            loanAmountElement.textContent = savedAmount;
+        }
+
+        if (savedDate) {
+            applyDateElement.textContent = savedDate;
+        }
     }
-    updateAmount();
-  }
-}
 
-// Function to decrease the amount by 10,000, down to a minimum of 10,000
-function decreaseAmount() {
-  if (currentAmount > 10000) { // Check if the amount is greater than 10,000
-    currentAmount -= 5000;
-    if (currentAmount < 10000) {
-      currentAmount = 10000; // Limit to a minimum of 10,000
-    }
-    updateAmount();
-  }
-}
+    // Call the retrieve function when the page loads
+    retrieveDataFromLocalStorage();
+</script>
 
-// Add click event listeners to the buttons
-increaseBtn.addEventListener('click', increaseAmount);
-decreaseBtn.addEventListener('click', decreaseAmount);
-
-// Initial display
-updateAmount();
-
-
-
-
-
-//BACKGROUND CHANGE
-
-// Function to update the selected duration
-function selectDuration(element) {
-  // Get all duration elements
-  const durationElements = document.querySelectorAll('.durationsmall');
-
-  // Set the background color for the clicked element
-  element.style.backgroundColor = 'rgb(0, 228, 87)';
-
-  // Reset the background color for unselected elements
-  durationElements.forEach((el) => {
-    if (el !== element) {
-      el.style.backgroundColor = '#232b32';
-    }
-  });
-
-  // Update the selected duration text
-  const selectedDuration = element.textContent.trim();
-  document.getElementById('selectedDuration').textContent = selectedDuration;
-}
-
-
-//DISPLAY CURRENT DATE
-
-// Function to update the current date
-function updateCurrentDate() {
-  const currentDateElement = document.getElementById('currentDate');
-  const currentDate = new Date(); // Get the current date
-  const formattedDate = currentDate.toLocaleDateString(); // Format the date as a string
-  currentDateElement.textContent = formattedDate; // Update the content with the current date
-}
-
-// Call the function to set the initial current date
-updateCurrentDate();
-
-
-
- </script>
 
 <script>
   // Function to open the modal
@@ -236,6 +187,32 @@ updateCurrentDate();
   function closeModal() {
       document.getElementById("myModal").style.display = "none";
   }
+</script>
+
+<script>
+    // Function to generate a random uppercase alphanumeric reference number
+    function generateRandomReferenceNumber() {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        const referenceLength = 8;
+        let reference = '';
+
+        for (let i = 0; i < referenceLength; i++) {
+            const randomIndex = Math.floor(Math.random() * characters.length);
+            reference += characters.charAt(randomIndex);
+        }
+
+        return reference;
+    }
+
+    // Function to set the generated reference number in the HTML
+    function setReferenceNumber() {
+        const referenceNumberElement = document.getElementById('referenceNumber');
+        const randomReference = generateRandomReferenceNumber();
+        referenceNumberElement.textContent = randomReference;
+    }
+
+    // Call the function to set the reference number when the page loads
+    setReferenceNumber();
 </script>
  
 </body>
