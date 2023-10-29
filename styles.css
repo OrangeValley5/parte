@@ -1786,6 +1786,9 @@ background-color: #191e23;
   .durationsmall {
     background: #232b32;
     padding: 0.5rem;
+    width: 85px;
+    display: flex;
+    justify-content: center;
     border-radius: 10px;
   }
 
