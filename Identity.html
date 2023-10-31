@@ -133,6 +133,8 @@ if (name) {
 }
 
 function saveDetails() {
+
+  localStorage.setItem('fname', document.getElementById('user_name').value);
             localStorage.setItem('middleName', document.getElementById('middleName').value);
             localStorage.setItem('lastName', document.getElementById('lastName').value);
             localStorage.setItem('stateOfOrigin', document.getElementById('stateOfOrigin').value);
@@ -161,6 +163,7 @@ function saveDetails() {
             document.getElementById('stateOfOrigin').value = localStorage.getItem('stateOfOrigin') || '';
             document.getElementById('phoneNumber').value = localStorage.getItem('phoneNumber') || '';
             document.getElementById('homeAddress').value = localStorage.getItem('homeAddress') || '';
+            
             const selectedGender = localStorage.getItem('selectedGender');
             if (selectedGender) {
                 document.querySelector(`input[name="gender"][value="${selectedGender}"]`).checked = true;
