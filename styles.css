@@ -2561,3 +2561,12 @@ background-color: #191e23;
     margin-left: 4px;
   }
 
+
+  .spannerz{
+    display: flex;
+  }
+
+  .spannerz span{
+    font-size: 10px;
+    margin-right: 2px;
+  }
